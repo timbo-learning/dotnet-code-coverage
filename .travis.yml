@@ -1,0 +1,7 @@
+language: csharp
+solution: unit-testing-using-dotnet-test.sln
+dotnet: 2.2.101
+python: 3.6
+script:
+  - dotnet restore
+  - python test_and_report.py
