@@ -1,0 +1,84 @@
+{
+  "PrimeService.dll": {
+    "C:\\Users\\rtimbo\\source\\repos\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService\\PrimeService.cs": {
+      "Prime.Services.PrimeService": {
+        "System.Boolean Prime.Services.PrimeService::IsPrime(System.Int32)": {
+          "Lines": {
+            "8": 11,
+            "9": 11,
+            "10": 3,
+            "11": 3,
+            "14": 22,
+            "15": 7,
+            "16": 7,
+            "17": 4,
+            "18": 4,
+            "20": 3,
+            "21": 4,
+            "22": 11
+          },
+          "Branches": [
+            {
+              "Line": 9,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 9,
+              "Offset": 7,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 8
+            },
+            {
+              "Line": 14,
+              "Offset": 57,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 7
+            },
+            {
+              "Line": 16,
+              "Offset": 27,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 16,
+              "Offset": 27,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 14,
+              "Offset": 57,
+              "EndOffset": 59,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Prime.Services.PrimeService::DoNotCoverMe()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

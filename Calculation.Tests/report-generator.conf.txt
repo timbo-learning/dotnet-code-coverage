@@ -1,0 +1,3 @@
+targetdir="report-generator-coverage"
+historydir="report-generator-history"
+reporttypes="HTML;HTMLChart;XML;PngChart;Badges"

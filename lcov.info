@@ -1,0 +1,35 @@
+SF:C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\PrimeService\PrimeService.cs
+FN:7,System.Boolean Prime.Services.PrimeService::IsPrime(System.Int32)
+FNDA:11,System.Boolean Prime.Services.PrimeService::IsPrime(System.Int32)
+DA:8,11
+DA:9,11
+DA:10,3
+DA:11,3
+DA:14,22
+DA:15,7
+DA:16,7
+DA:17,4
+DA:18,4
+DA:20,3
+DA:21,4
+DA:22,11
+BRDA:9,7,0,3
+BRDA:9,7,1,8
+BRDA:14,57,1,7
+BRDA:16,27,0,4
+BRDA:16,27,1,3
+BRDA:14,57,0,4
+FN:23,System.Void Prime.Services.PrimeService::DoNotCoverMe()
+FNDA:0,System.Void Prime.Services.PrimeService::DoNotCoverMe()
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+LF:17
+LH:12
+BRF:6
+BRH:6
+FNF:2
+FNH:1
+end_of_record

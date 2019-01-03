@@ -1,0 +1,92 @@
+{
+  "Calculation.dll": {
+    "C:\\Users\\rtimbo\\source\\repos\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\Calculation\\Basic\\Addition.cs": {
+      "Calculation.Basic.Addition": {
+        "System.Decimal Calculation.Basic.Addition::Calculate()": {
+          "Lines": {
+            "19": 3,
+            "20": 3,
+            "21": 3
+          },
+          "Branches": []
+        },
+        "System.Void Calculation.Basic.Addition::.ctor(System.Decimal,System.Decimal)": {
+          "Lines": {
+            "12": 4,
+            "13": 4,
+            "14": 4,
+            "15": 4,
+            "16": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\rtimbo\\source\\repos\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\Calculation\\Basic\\Division.cs": {
+      "Calculation.Basic.Division": {
+        "System.Decimal Calculation.Basic.Division::Calculate()": {
+          "Lines": {
+            "17": 5,
+            "18": 5,
+            "19": 5
+          },
+          "Branches": []
+        },
+        "System.Void Calculation.Basic.Division::.ctor(System.Decimal,System.Decimal)": {
+          "Lines": {
+            "10": 5,
+            "11": 5,
+            "12": 5,
+            "13": 5,
+            "14": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\rtimbo\\source\\repos\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\Calculation\\Basic\\Multiplication.cs": {
+      "Calculation.Basic.Multiplication": {
+        "System.Decimal Calculation.Basic.Multiplication::Calculate()": {
+          "Lines": {
+            "15": 5,
+            "16": 5,
+            "17": 5
+          },
+          "Branches": []
+        },
+        "System.Void Calculation.Basic.Multiplication::.ctor(System.Decimal,System.Decimal)": {
+          "Lines": {
+            "8": 5,
+            "9": 5,
+            "10": 5,
+            "11": 5,
+            "12": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\rtimbo\\source\\repos\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\Calculation\\Basic\\Subtraction.cs": {
+      "Calculation.Basic.Subtraction": {
+        "System.Decimal Calculation.Basic.Subtraction::Calculate()": {
+          "Lines": {
+            "17": 3,
+            "18": 3,
+            "19": 3
+          },
+          "Branches": []
+        },
+        "System.Void Calculation.Basic.Subtraction::.ctor(System.Decimal,System.Decimal)": {
+          "Lines": {
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 3,
+            "14": 3
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
