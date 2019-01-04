@@ -2,10 +2,16 @@
 import os
 import argparse
 
+def validate_args(args):
+    if not args.testfolder:
+        raise ValueError("--testfolder required")
+    if not args.target:
+        raise ValueError("--target required")
+
 def parse_arguments(raw_args):
     parser = argparse.ArgumentParser()
     parser.add_argument('-tf', '--testfolder',
-        default=os.getenv('testfolder', 'Calculation.Tests')
+        default=os.getenv('testfolder', None )
         )
     parser.add_argument('-f', '--format',
         default=os.getenv('format', 'opencover')
@@ -14,7 +20,7 @@ def parse_arguments(raw_args):
         default=os.getenv('output', 'output.opencover.xml')
         )
     parser.add_argument('-t', '--target',
-        default=os.getenv('target', 'calculation')
+        default=os.getenv('target', None )
         )
     parser.add_argument('--test', dest='test', action='store_true')
     parser.add_argument('--no-test', dest='test', action='store_false')
@@ -40,6 +46,7 @@ def coverlet(args):
 
 def main(raw_args=None):
     args = parse_arguments(raw_args)
+    validate_args(args)
     cmd = coverlet(args)
     args.test and os.system("dotnet test")
     os.system(cmd)

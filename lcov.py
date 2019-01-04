@@ -13,7 +13,7 @@ def main():
         '--format', lcovFormat,
         '--output', lcovOutput,
         '--target', test_and_report.primeTarget,
-        '--test'
+        '--no-test'
         ])
 
     os.rename(lcovOutput, os.path.join(test_and_report.primeFolder, lcovOutput))
