@@ -29,13 +29,15 @@ def parse_arguments(raw_args):
 
 def coverlet(args):
     print(args)
-    cmd = "coverlet %(target)s" \
+    coverletPath = os.path.join('bin', 'coverlet')
+    cmd = "%(coverlet)s %(target)s" \
             + ' --exclude "[xunit.runner.*]*" ' \
             + ' --target dotnet --targetargs "test %(testfolder)s --no-build" ' \
             + ' -o %(output)s' \
             + ' --format %(format)s' \
             # lcov to show lines on Visual Studio Code
     cmd = cmd % {
+        'coverlet': coverletPath,
         'target': args.target,
         'testfolder': args.testfolder,
         'output': args.output,

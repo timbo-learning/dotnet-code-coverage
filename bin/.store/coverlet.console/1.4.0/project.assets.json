@@ -1,0 +1,122 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "coverlet.console/1.4.0": {
+        "type": "package"
+      }
+    },
+    ".NETCoreApp,Version=v2.2/any": {
+      "coverlet.console/1.4.0": {
+        "type": "package",
+        "tools": {
+          "tools/netcoreapp2.1/any/ConsoleTables.dll": {},
+          "tools/netcoreapp2.1/any/DotnetToolSettings.xml": {},
+          "tools/netcoreapp2.1/any/Microsoft.Extensions.CommandLineUtils.dll": {},
+          "tools/netcoreapp2.1/any/Microsoft.Extensions.FileSystemGlobbing.dll": {},
+          "tools/netcoreapp2.1/any/Mono.Cecil.Mdb.dll": {},
+          "tools/netcoreapp2.1/any/Mono.Cecil.Pdb.dll": {},
+          "tools/netcoreapp2.1/any/Mono.Cecil.Rocks.dll": {},
+          "tools/netcoreapp2.1/any/Mono.Cecil.dll": {},
+          "tools/netcoreapp2.1/any/Newtonsoft.Json.dll": {},
+          "tools/netcoreapp2.1/any/coverlet.console.deps.json": {},
+          "tools/netcoreapp2.1/any/coverlet.console.dll": {},
+          "tools/netcoreapp2.1/any/coverlet.console.pdb": {},
+          "tools/netcoreapp2.1/any/coverlet.console.runtimeconfig.json": {},
+          "tools/netcoreapp2.1/any/coverlet.core.dll": {},
+          "tools/netcoreapp2.1/any/coverlet.core.pdb": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "coverlet.console/1.4.0": {
+      "sha512": "YyvZYy/8tjqELwapFbvmUXAmtmow94x2CKIMmYGi4KKM1lQJlJVGFvUrbkPe7lZX64pawdzxN/5xAbDs2IND6g==",
+      "type": "package",
+      "path": "coverlet.console/1.4.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "coverlet.console.1.4.0.nupkg.sha512",
+        "coverlet.console.nuspec",
+        "tools/netcoreapp2.1/any/ConsoleTables.dll",
+        "tools/netcoreapp2.1/any/DotnetToolSettings.xml",
+        "tools/netcoreapp2.1/any/Microsoft.Extensions.CommandLineUtils.dll",
+        "tools/netcoreapp2.1/any/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/netcoreapp2.1/any/Mono.Cecil.Mdb.dll",
+        "tools/netcoreapp2.1/any/Mono.Cecil.Pdb.dll",
+        "tools/netcoreapp2.1/any/Mono.Cecil.Rocks.dll",
+        "tools/netcoreapp2.1/any/Mono.Cecil.dll",
+        "tools/netcoreapp2.1/any/Newtonsoft.Json.dll",
+        "tools/netcoreapp2.1/any/coverlet.console.deps.json",
+        "tools/netcoreapp2.1/any/coverlet.console.dll",
+        "tools/netcoreapp2.1/any/coverlet.console.pdb",
+        "tools/netcoreapp2.1/any/coverlet.console.runtimeconfig.json",
+        "tools/netcoreapp2.1/any/coverlet.core.dll",
+        "tools/netcoreapp2.1/any/coverlet.core.pdb"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.2": [
+      "coverlet.console"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\rtimbo\\source\\repos\\unit-testing-using-dotnet-test\\bin\\.store\\.stage\\b31tfcip.hsy": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\cygwin64\\tmp\\pcljxu0i.cje\\restore.csproj",
+      "projectName": "restore",
+      "projectPath": "C:\\cygwin64\\tmp\\pcljxu0i.cje\\restore.csproj",
+      "packagesPath": "C:\\Users\\rtimbo\\source\\repos\\unit-testing-using-dotnet-test\\bin\\.store\\.stage\\b31tfcip.hsy",
+      "outputPath": "C:\\Users\\rtimbo\\source\\repos\\unit-testing-using-dotnet-test\\bin\\.store\\.stage\\b31tfcip.hsy\\",
+      "projectStyle": "DotnetToolReference",
+      "configFilePaths": [
+        "C:\\Users\\rtimbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.2"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "dependencies": {
+          "coverlet.console": {
+            "target": "Package",
+            "version": "(, )"
+          }
+        },
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    },
+    "runtimes": {
+      "any": {
+        "#import": []
+      }
+    }
+  }
+}
