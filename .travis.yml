@@ -6,7 +6,7 @@ python: 3.6
 script:
   - dotnet restore
   - dotnet tool install coverlet.console --tool-path=bin
-  - python test_and_report.py
+  - python bin/test_and_report.py
   - sonar-scanner
 
 addons:
