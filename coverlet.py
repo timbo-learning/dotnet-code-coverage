@@ -32,8 +32,8 @@ def coverlet(args):
     cmd = cmd % {
         'target': args.target,
         'testfolder': args.testfolder,
-        'output': 'prime.opencover.xml',
-        'format': 'opencover'
+        'output': args.output,
+        'format': args.format
         } 
     print(">>>>" + cmd)
     return cmd

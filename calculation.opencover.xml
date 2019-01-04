@@ -2,15 +2,15 @@
 <CoverageSession>
   <Summary numSequencePoints="38" visitedSequencePoints="35" numBranchPoints="38" visitedBranchPoints="35" sequenceCoverage="0.921" branchCoverage="0.921" maxCyclomaticComplexity="10" minCyclomaticComplexity="10" visitedClasses="4" numClasses="4" visitedMethods="9" numMethods="10" />
   <Modules>
-    <Module hash="3A1BCB97-2533-4A82-A376-FBBE55C25432">
+    <Module hash="276D22D0-6F4A-4BD8-A985-1619190F4FD4">
       <ModulePath>Calculation.dll</ModulePath>
-      <ModuleTime>2019-01-03T05:28:23</ModuleTime>
+      <ModuleTime>2019-01-04T01:02:59</ModuleTime>
       <ModuleName>Calculation</ModuleName>
       <Files>
-        <File uid="1" fullPath="C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs" />
-        <File uid="2" fullPath="C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Division.cs" />
-        <File uid="3" fullPath="C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Multiplication.cs" />
-        <File uid="4" fullPath="C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Subtraction.cs" />
+        <File uid="1" fullPath="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs" />
+        <File uid="2" fullPath="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Division.cs" />
+        <File uid="3" fullPath="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Multiplication.cs" />
+        <File uid="4" fullPath="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Subtraction.cs" />
       </Files>
       <Classes>
         <Class>

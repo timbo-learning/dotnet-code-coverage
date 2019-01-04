@@ -1,0 +1,90 @@
+SF:C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs
+FN:18,System.Decimal Calculation.Basic.Addition::Calculate()
+FNDA:3,System.Decimal Calculation.Basic.Addition::Calculate()
+DA:19,3
+DA:20,3
+DA:21,3
+FN:23,System.Void Calculation.Basic.Addition::NotCoveredByTests()
+FNDA:0,System.Void Calculation.Basic.Addition::NotCoveredByTests()
+DA:24,0
+DA:25,0
+DA:26,0
+FN:28,System.String Calculation.Basic.Addition::CoveredOnNextBuild()
+FNDA:1,System.String Calculation.Basic.Addition::CoveredOnNextBuild()
+DA:29,1
+DA:30,1
+DA:31,1
+FN:11,System.Void Calculation.Basic.Addition::.ctor(System.Decimal,System.Decimal)
+FNDA:5,System.Void Calculation.Basic.Addition::.ctor(System.Decimal,System.Decimal)
+DA:12,5
+DA:13,5
+DA:14,5
+DA:15,5
+DA:16,5
+LF:14
+LH:11
+BRF:0
+BRH:0
+FNF:4
+FNH:3
+end_of_record
+SF:C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Division.cs
+FN:16,System.Decimal Calculation.Basic.Division::Calculate()
+FNDA:5,System.Decimal Calculation.Basic.Division::Calculate()
+DA:17,5
+DA:18,5
+DA:19,5
+FN:9,System.Void Calculation.Basic.Division::.ctor(System.Decimal,System.Decimal)
+FNDA:5,System.Void Calculation.Basic.Division::.ctor(System.Decimal,System.Decimal)
+DA:10,5
+DA:11,5
+DA:12,5
+DA:13,5
+DA:14,5
+LF:8
+LH:8
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Multiplication.cs
+FN:14,System.Decimal Calculation.Basic.Multiplication::Calculate()
+FNDA:5,System.Decimal Calculation.Basic.Multiplication::Calculate()
+DA:15,5
+DA:16,5
+DA:17,5
+FN:7,System.Void Calculation.Basic.Multiplication::.ctor(System.Decimal,System.Decimal)
+FNDA:5,System.Void Calculation.Basic.Multiplication::.ctor(System.Decimal,System.Decimal)
+DA:8,5
+DA:9,5
+DA:10,5
+DA:11,5
+DA:12,5
+LF:8
+LH:8
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Subtraction.cs
+FN:16,System.Decimal Calculation.Basic.Subtraction::Calculate()
+FNDA:3,System.Decimal Calculation.Basic.Subtraction::Calculate()
+DA:17,3
+DA:18,3
+DA:19,3
+FN:9,System.Void Calculation.Basic.Subtraction::.ctor(System.Decimal,System.Decimal)
+FNDA:3,System.Void Calculation.Basic.Subtraction::.ctor(System.Decimal,System.Decimal)
+DA:10,3
+DA:11,3
+DA:12,3
+DA:13,3
+DA:14,3
+LF:8
+LH:8
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record

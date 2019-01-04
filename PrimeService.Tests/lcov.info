@@ -1,4 +1,4 @@
-SF:C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\PrimeService\PrimeService.cs
+SF:C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\PrimeService\PrimeService.cs
 FN:7,System.Boolean Prime.Services.PrimeService::IsPrime(System.Int32)
 FNDA:11,System.Boolean Prime.Services.PrimeService::IsPrime(System.Int32)
 DA:8,11
