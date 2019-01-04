@@ -4,7 +4,7 @@
     <Class>Calculation.Basic.Addition</Class>
     <Assembly>Calculation</Assembly>
     <Files>
-      <File>C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs</File>
+      <File>C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs</File>
     </Files>
     <Coveredlines>11</Coveredlines>
     <Uncoveredlines>3</Uncoveredlines>
@@ -39,7 +39,7 @@
     </Element>
   </Metrics>
   <Files>
-    <File name="C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs">
+    <File name="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs">
       <LineAnalysis line="1" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="using System;" />
       <LineAnalysis line="2" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="using System.Collections.Generic;" />
       <LineAnalysis line="3" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="using System.Text;" />

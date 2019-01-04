@@ -24,5 +24,12 @@ namespace Calculation.Basic.Tests
             Addition calculation = new Addition(1, 1);
             calculation.CoveredOnNextBuild();
         }
+
+        [Fact]
+        public void TestedOnFourthBuild()
+        {
+            Subtraction calculation = new Subtraction(2, 0);
+            calculation.CodedOnFourthBuild();
+        }
     }
 }

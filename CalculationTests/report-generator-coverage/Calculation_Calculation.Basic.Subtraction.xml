@@ -4,13 +4,14 @@
     <Class>Calculation.Basic.Subtraction</Class>
     <Assembly>Calculation</Assembly>
     <Files>
-      <File>C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Subtraction.cs</File>
+      <File>C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Subtraction.cs</File>
     </Files>
-    <Coveredlines>8</Coveredlines>
-    <Uncoveredlines>0</Uncoveredlines>
-    <Coverablelines>8</Coverablelines>
-    <Totallines>22</Totallines>
-    <Linecoverage>100%</Linecoverage>
+    <Coveredlines>26</Coveredlines>
+    <Uncoveredlines>3</Uncoveredlines>
+    <Coverablelines>29</Coverablelines>
+    <Totallines>46</Totallines>
+    <Linecoverage>89.6%</Linecoverage>
+    <Branchcoverage>50%</Branchcoverage>
   </Summary>
   <Metrics>
     <Element name="ctor">
@@ -25,9 +26,15 @@
       <Sequencecoverage>1</Sequencecoverage>
       <Branchcoverage>1</Branchcoverage>
     </Element>
+    <Element name="CodedOnFourthBuild">
+      <Cyclomaticcomplexity>2</Cyclomaticcomplexity>
+      <NPathcomplexity>0</NPathcomplexity>
+      <Sequencecoverage>0.857</Sequencecoverage>
+      <Branchcoverage>0.5</Branchcoverage>
+    </Element>
   </Metrics>
   <Files>
-    <File name="C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Subtraction.cs">
+    <File name="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Subtraction.cs">
       <LineAnalysis line="1" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
       <LineAnalysis line="2" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
       <LineAnalysis line="3" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="namespace Calculation.Basic" />
@@ -37,19 +44,43 @@
       <LineAnalysis line="7" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        private readonly decimal x;" />
       <LineAnalysis line="8" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        private readonly decimal y;" />
       <LineAnalysis line="9" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
-      <LineAnalysis line="10" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="        public Subtraction(decimal x, decimal y)" />
-      <LineAnalysis line="11" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="        {" />
-      <LineAnalysis line="12" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="            this.x = x;" />
-      <LineAnalysis line="13" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="            this.y = y;" />
-      <LineAnalysis line="14" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="10" visits="4" coverage="Covered" coveredbranches="" totalbranches="" content="        public Subtraction(decimal x, decimal y)" />
+      <LineAnalysis line="11" visits="4" coverage="Covered" coveredbranches="" totalbranches="" content="        {" />
+      <LineAnalysis line="12" visits="4" coverage="Covered" coveredbranches="" totalbranches="" content="            this.x = x;" />
+      <LineAnalysis line="13" visits="4" coverage="Covered" coveredbranches="" totalbranches="" content="            this.y = y;" />
+      <LineAnalysis line="14" visits="4" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
       <LineAnalysis line="15" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
       <LineAnalysis line="16" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public decimal Calculate()" />
       <LineAnalysis line="17" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="        {" />
       <LineAnalysis line="18" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="            return x - y;" />
       <LineAnalysis line="19" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
-      <LineAnalysis line="20" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
-      <LineAnalysis line="21" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
-      <LineAnalysis line="22" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="20" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="21" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public void CodedOnFourthBuild()" />
+      <LineAnalysis line="22" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="        {" />
+      <LineAnalysis line="23" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            string foo = &quot;&quot;;" />
+      <LineAnalysis line="24" visits="1" coverage="PartiallyCovered" coveredbranches="1" totalbranches="2" content="            if (x % 2 == 0)" />
+      <LineAnalysis line="25" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            {" />
+      <LineAnalysis line="26" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="                foo = &quot;branch 1 coverage test&quot;;" />
+      <LineAnalysis line="27" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            } else" />
+      <LineAnalysis line="28" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            {" />
+      <LineAnalysis line="29" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="                foo = &quot;branch 2 coverage test&quot;;" />
+      <LineAnalysis line="30" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            }" />
+      <LineAnalysis line="31" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="32" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo = &quot;really&quot;;" />
+      <LineAnalysis line="33" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; long&quot;;" />
+      <LineAnalysis line="34" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; operation&quot;;" />
+      <LineAnalysis line="35" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; with&quot;;" />
+      <LineAnalysis line="36" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; a&quot;;" />
+      <LineAnalysis line="37" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; lot&quot;;" />
+      <LineAnalysis line="38" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; of&quot;;" />
+      <LineAnalysis line="39" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; lines&quot;;" />
+      <LineAnalysis line="40" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; to&quot;;" />
+      <LineAnalysis line="41" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; be&quot;;" />
+      <LineAnalysis line="42" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; tested&quot;;" />
+      <LineAnalysis line="43" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="44" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
+      <LineAnalysis line="45" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
+      <LineAnalysis line="46" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
     </File>
   </Files>
 </CoverageReport>

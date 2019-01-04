@@ -74,17 +74,42 @@ FNDA:3,System.Decimal Calculation.Basic.Subtraction::Calculate()
 DA:17,3
 DA:18,3
 DA:19,3
+FN:21,System.Void Calculation.Basic.Subtraction::CodedOnFourthBuild()
+FNDA:1,System.Void Calculation.Basic.Subtraction::CodedOnFourthBuild()
+DA:22,1
+DA:23,1
+DA:24,1
+DA:25,1
+DA:26,1
+DA:27,1
+DA:28,0
+DA:29,0
+DA:30,0
+DA:32,1
+DA:33,1
+DA:34,1
+DA:35,1
+DA:36,1
+DA:37,1
+DA:38,1
+DA:39,1
+DA:40,1
+DA:41,1
+DA:42,1
+DA:43,1
+BRDA:24,36,0,1
+BRDA:24,36,1,0
 FN:9,System.Void Calculation.Basic.Subtraction::.ctor(System.Decimal,System.Decimal)
-FNDA:3,System.Void Calculation.Basic.Subtraction::.ctor(System.Decimal,System.Decimal)
-DA:10,3
-DA:11,3
-DA:12,3
-DA:13,3
-DA:14,3
-LF:8
-LH:8
-BRF:0
-BRH:0
-FNF:2
-FNH:2
+FNDA:4,System.Void Calculation.Basic.Subtraction::.ctor(System.Decimal,System.Decimal)
+DA:10,4
+DA:11,4
+DA:12,4
+DA:13,4
+DA:14,4
+LF:29
+LH:26
+BRF:2
+BRH:1
+FNF:3
+FNH:3
 end_of_record

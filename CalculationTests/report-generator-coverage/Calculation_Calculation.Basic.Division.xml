@@ -4,7 +4,7 @@
     <Class>Calculation.Basic.Division</Class>
     <Assembly>Calculation</Assembly>
     <Files>
-      <File>C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Division.cs</File>
+      <File>C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Division.cs</File>
     </Files>
     <Coveredlines>8</Coveredlines>
     <Uncoveredlines>0</Uncoveredlines>
@@ -27,7 +27,7 @@
     </Element>
   </Metrics>
   <Files>
-    <File name="C:\Users\rtimbo\source\repos\samples\core\getting-started\unit-testing-using-dotnet-test\Calculation\Basic\Division.cs">
+    <File name="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Division.cs">
       <LineAnalysis line="1" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
       <LineAnalysis line="2" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
       <LineAnalysis line="3" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="namespace Calculation.Basic" />
