@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import os
 import coverlet
+import lcov
 
 primeFolder = "PrimeService.Tests"
 calculationFolder = "Calculation.Tests"
@@ -12,14 +13,17 @@ primeOutput = 'prime.opencover.xml'
 calculationOutput = 'calculation.opencover.xml'
 outputFormat = 'opencover'
 
+
 def main():
+    #Update lcov.info to see line coverage on VS Code
+    lcov.main()
 
     coverlet.main([
         '--testfolder', primeFolder,
         '--format', outputFormat,
         '--output', primeOutput,
         '--target', primeTarget,
-        '--test'
+        '--no-test'
         ])
 
     coverlet.main([
