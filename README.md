@@ -1,5 +1,6 @@
 # Timbó status report
-
+![Build status](https://travis-ci.com/timbo-learning/dotnet-code-coverage.svg?branch=master)
+![Coverage Badge](report-generator-coverage/badge_combined.svg)
 ## Graphic Report
 
 #### SonarQube
@@ -27,11 +28,11 @@ python3 report-generator.py
 
 ###### Report Generator Outputs
 
-Branch Coverage ![Branch Coverage Badge](Calculation.Tests/report-generator-coverage/badge_branchcoverage.svg)
+Branch Coverage ![Branch Coverage Badge](report-generator-coverage/badge_branchcoverage.svg)
 
-Line Coverage ![Line Coverage Badge](Calculation.Tests/report-generator-coverage/badge_linecoverage.svg)
+Line Coverage ![Line Coverage Badge](report-generator-coverage/badge_linecoverage.svg)
 
-Combined Coverage![Coverage Badge](Calculation.Tests/report-generator-coverage/badge_combined.svg)
+Combined Coverage![Coverage Badge](report-generator-coverage/badge_combined.svg)
 
     Generated on:	1/3/2019 - 12:29:02 PM
     Parser:	MultiReportParser (2x OpenCoverParser)
