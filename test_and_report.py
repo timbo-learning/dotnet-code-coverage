@@ -28,11 +28,12 @@ def main():
     #    ' -o  ' + primeOutput  + \
     #    '-t  ' + primeBin)
 
-    #Generate the report using Report Generator
-    report_generator.main()
-
     #Update lcov.info to see line coverage on VS Code
     lcov.main()
+
+    #Generate the report using Report Generator
+    os.chdir(calculationFolder)
+    report_generator.main()
 
 
 if __name__ == '__main__':
