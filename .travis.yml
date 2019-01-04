@@ -1,6 +1,6 @@
 language: csharp
 solution: unit-testing-using-dotnet-test.sln
-dotnet: 2.2.101
+dotnet: 2.1.502
 python: 3.6
 script:
   - dotnet restore
