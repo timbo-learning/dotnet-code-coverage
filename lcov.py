@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import os
 import coverlet
-import test_and_report
+import config
 #import shutil
 
 lcovOutput='lcov.info'
@@ -9,22 +9,22 @@ lcovFormat='lcov'
 
 def main():
     coverlet.main([
-        '--testfolder', test_and_report.primeFolder,
+        '--testfolder', config.primeFolder,
         '--format', lcovFormat,
         '--output', lcovOutput,
-        '--target', test_and_report.primeTarget,
+        '--target', config.primeTarget,
         '--no-test'
         ])
 
-    os.rename(lcovOutput, os.path.join(test_and_report.primeFolder, lcovOutput))
+    os.rename(lcovOutput, os.path.join(config.primeFolder, lcovOutput))
     coverlet.main([
-        '--testfolder', test_and_report.calculationFolder,
+        '--testfolder', config.calculationFolder,
         '--format', lcovFormat,
         '--output', lcovOutput,
-        '--target', test_and_report.calculationTarget,
+        '--target', config.calculationTarget,
         '--no-test'
         ])
-    os.rename(lcovOutput, os.path.join(test_and_report.calculationFolder, lcovOutput))
+    os.rename(lcovOutput, os.path.join(config.calculationFolder, lcovOutput))
 
 if __name__ == '__main__':
     main()

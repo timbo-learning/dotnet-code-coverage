@@ -2,18 +2,8 @@
 import os
 import coverlet
 import lcov
-import Calculation.Tests.report_generator
-
-primeFolder = "PrimeServiceTests"
-calculationFolder = "CalculationTests"
-primeTarget        = os.path.join(
-    primeFolder   , 'bin', 'Debug', 'netcoreapp2.1', 'PrimeServiceTests.dll')
-calculationTarget  = os.path.join(
-    calculationFolder , 'bin', 'Debug', 'netcoreapp2.1', 'CalculationTests.dll')
-primeOutput = 'prime.opencover.xml'
-calculationOutput = 'calculation.opencover.xml'
-outputFormat = 'opencover'
-
+from CalculationTests import report_generator
+from config import *
 
 def main():
 
@@ -37,6 +27,9 @@ def main():
     #    ' -f  ' + outputFormat + \
     #    ' -o  ' + primeOutput  + \
     #    '-t  ' + primeBin)
+
+    #Generate the report using Report Generator
+    report_generator.main()
 
     #Update lcov.info to see line coverage on VS Code
     lcov.main()
