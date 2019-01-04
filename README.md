@@ -3,13 +3,16 @@
 ![Coverage Badge](report-generator-coverage/badge_combined.svg)
 ## Graphic Report
 
-#### SonarQube
+#### SonarQube, getting it to work
 
 https://www.sonarqube.org/
 
 Using Travis-CI integration
-
-Travis-CI does not support dotnet 2.2 yet. Downgrade to 2.1
+3. Set up Travis-ci
+1. Travis-CI does not support dotnet 2.2 yet. Downgraded to 2.1.
+2. Following sonarqube instructions.
+3. Generated a Token for the app and included `SONAR_TOKEN` on Travis Settings_
+4. Changed some configuration on sonarcloud under `Administration>General Settings`, such as Test files and source files.
 
 #### Report Generator 
 
