@@ -97,6 +97,8 @@ DA:40,2
 DA:41,2
 DA:42,2
 DA:43,2
+DA:44,2
+DA:45,2
 BRDA:24,36,0,1
 BRDA:24,36,1,1
 FN:9,System.Void Calculation.Basic.Subtraction::.ctor(System.Decimal,System.Decimal)
@@ -106,8 +108,8 @@ DA:11,5
 DA:12,5
 DA:13,5
 DA:14,5
-LF:29
-LH:29
+LF:31
+LH:31
 BRF:2
 BRH:2
 FNF:3

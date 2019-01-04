@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="17" visitedSequencePoints="12" numBranchPoints="17" visitedBranchPoints="12" sequenceCoverage="0.706" branchCoverage="0.706" maxCyclomaticComplexity="7" minCyclomaticComplexity="7" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
   <Modules>
-    <Module hash="337DB60F-30C7-4FC8-A5A5-077DD5390C39">
+    <Module hash="4D259108-F344-4E53-8DD7-6CD699E9E657">
       <ModulePath>PrimeService.dll</ModulePath>
-      <ModuleTime>2019-01-04T08:57:10</ModuleTime>
+      <ModuleTime>2019-01-04T11:00:10</ModuleTime>
       <ModuleName>PrimeService</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\PrimeService\PrimeService.cs" />

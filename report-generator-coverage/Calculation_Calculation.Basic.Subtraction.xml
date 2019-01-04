@@ -6,10 +6,10 @@
     <Files>
       <File>C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Subtraction.cs</File>
     </Files>
-    <Coveredlines>29</Coveredlines>
+    <Coveredlines>31</Coveredlines>
     <Uncoveredlines>0</Uncoveredlines>
-    <Coverablelines>29</Coverablelines>
-    <Totallines>46</Totallines>
+    <Coverablelines>31</Coverablelines>
+    <Totallines>48</Totallines>
     <Linecoverage>100%</Linecoverage>
     <Branchcoverage>100%</Branchcoverage>
   </Summary>
@@ -77,10 +77,12 @@
       <LineAnalysis line="40" visits="2" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; to&quot;;" />
       <LineAnalysis line="41" visits="2" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; be&quot;;" />
       <LineAnalysis line="42" visits="2" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; tested&quot;;" />
-      <LineAnalysis line="43" visits="2" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
-      <LineAnalysis line="44" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
-      <LineAnalysis line="45" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
-      <LineAnalysis line="46" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="43" visits="2" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; until&quot;;" />
+      <LineAnalysis line="44" visits="2" coverage="Covered" coveredbranches="" totalbranches="" content="            foo += &quot; 6th build&quot;;" />
+      <LineAnalysis line="45" visits="2" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="46" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
+      <LineAnalysis line="47" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
+      <LineAnalysis line="48" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
     </File>
   </Files>
 </CoverageReport>

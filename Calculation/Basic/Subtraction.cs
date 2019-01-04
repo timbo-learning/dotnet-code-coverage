@@ -40,6 +40,8 @@ namespace Calculation.Basic
             foo += " to";
             foo += " be";
             foo += " tested";
+            foo += " until";
+            foo += " 6th build";
         }
     }
 }
