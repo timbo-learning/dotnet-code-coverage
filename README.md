@@ -6,6 +6,9 @@
 
 https://www.sonarqube.org/
 
+Using Travis-CI integration
+
+Travis-CI does not support dotnet 2.2 yet. Downgrade to 2.1
 
 #### Report Generator 
 

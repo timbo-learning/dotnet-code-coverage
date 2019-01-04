@@ -1,3 +1,4 @@
+dist: trusty
 language: csharp
 solution: unit-testing-using-dotnet-test.sln
 dotnet: 2.1.502
@@ -5,3 +6,9 @@ python: 3.6
 script:
   - dotnet restore
   - python test_and_report.py
+  - sonar-scanner
+
+addons:
+  sonarcloud:
+    organization: timbo
+
