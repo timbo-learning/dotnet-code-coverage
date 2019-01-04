@@ -5,6 +5,7 @@ dotnet: 2.1.502
 python: 3.6
 script:
   - dotnet restore
+  - dotnet tool install --global coverlet.console
   - python test_and_report.py
   - sonar-scanner
 
