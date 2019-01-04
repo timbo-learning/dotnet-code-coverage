@@ -31,5 +31,12 @@ namespace Calculation.Basic.Tests
             Subtraction calculation = new Subtraction(2, 0);
             calculation.CodedOnFourthBuild();
         }
+
+        [Fact]
+        public void TestedOnFifthBuild()
+        {
+            Subtraction calculation = new Subtraction(3, 0);
+            calculation.CodedOnFourthBuild();
+        }
     }
 }

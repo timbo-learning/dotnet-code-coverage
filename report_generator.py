@@ -2,6 +2,8 @@
 import os
 #import configargparse
 import argparse
+import logger
+import config
 
 headerSign = "=" * 10
 
@@ -15,12 +17,18 @@ def parse_arguments(raw_args):
         default=os.getenv('coverage',defaultCoverageFiles),
         help='coverage file')
     parser.add_argument('-td', '--targetdir',
-        default=os.getenv('targetdir','report-generator-coverage'))
+        default=os.getenv('targetdir',
+            os.path.join('..',
+                'report-generator-coverage')))
     parser.add_argument('-hd', '--historydir',
-        default=os.getenv('historydir', 'report-generator-history'))
+        default=os.getenv('historydir', 
+            os.path.join('..',
+                'report-generator-history')))
     parser.add_argument('-rt', '--reporttypes',
         default=os.getenv('reporttypes',
             'HTML;HTMLChart;XML;PngChart;Badges'))
+    parser.add_argument('-cd', '--chdir',
+        type=bool, default=True)
     parser.add_argument('-v', '--verbosity',
         type=int, default=3)
     parser.add_argument('-q', '--quiet',
@@ -41,13 +49,22 @@ def reportgeneratorargs(args):
 def main(raw_args=None):
     reportgenerator = "reportgenerator"
     args = parse_arguments(raw_args)
-    
-    args.verbosity >= 3 and print("\nINFO: " + headerSign + "Report Generator" + headerSign + "\n")
+    log = logger.Logger(name=reportgenerator, format='level')
+
+    log.infoTitle(reportgenerator)
+
+    if args.chdir:
+        os.chdir(config.calculationFolder)
 
     cmd = "dotnet " + reportgenerator + reportgeneratorargs(args)
     print(cmd)
     os.system(cmd)
-    args.verbosity >= 3 and print("INFO: " + headerSign + "End of Report Generator" + headerSign)
+
+
+    if args.chdir:
+        os.chdir('..')
+
+    log.infoTitle('End of ' + reportgenerator, breakLine=False)
 
 if __name__ == '__main__':
     main()

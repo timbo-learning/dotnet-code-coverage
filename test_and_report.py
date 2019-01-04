@@ -2,7 +2,7 @@
 import os
 import coverlet
 import lcov
-from CalculationTests import report_generator
+import report_generator
 from config import *
 
 def main():
@@ -32,7 +32,6 @@ def main():
     lcov.main()
 
     #Generate the report using Report Generator
-    os.chdir(calculationFolder)
     report_generator.main()
 
 

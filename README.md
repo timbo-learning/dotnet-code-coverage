@@ -15,6 +15,8 @@ Travis-CI does not support dotnet 2.2 yet. Downgrade to 2.1
 Generates a very descriptive `index.htm` under `Calculation.Tests/report-generator-coverage`,
 showing line coverage, branch coverage, covered lines, build history.
 
+! Cannot see line coverage of past builds
+
 on this project under `core/getting-started/unit-testing-using-dotnet-test`, run:
 
 ```
