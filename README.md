@@ -8,11 +8,20 @@
 https://www.sonarqube.org/
 
 Using Travis-CI integration
-3. Set up Travis-ci
+
+1. Set up Travis-ci.
+[C# Project](https://docs.travis-ci.com/user/languages/csharp/) |
+[Custom Build](https://docs.travis-ci.com/user/customizing-the-build/)
 1. Travis-CI does not support dotnet 2.2 yet. Downgraded to 2.1.
 2. Following sonarqube instructions.
+[SonarCloud + Travis](https://docs.travis-ci.com/user/sonarcloud/)
 3. Generated a Token for the app and included `SONAR_TOKEN` on Travis Settings_
 4. Changed some configuration on sonarcloud under `Administration>General Settings`, such as Test files and source files.
+5. Add configuration to sonar-project.properties 
+[List of sonar parameters](https://docs.sonarqube.org/latest/analysis/analysis-parameters/) |
+[sonar-project.properties example](https://github.com/SonarSource/sonar-scanning-examples/blob/master/sonarqube-scanner/sonar-project.properties)
+6. 
+7. 
 
 #### Report Generator 
 
