@@ -5,6 +5,11 @@
 
 #### SonarQube, getting it to work
 
+###### Screenshots (buggy?)
+![](screenshots/sonarcloud/sonarcloud-coverage.PNG)
+![](screenshots/sonarcloud/sonarcloud-coverage-empty-graph.PNG)
+![](screenshots/sonarcloud/sonarcloud-line-coverage.PNG)
+
 https://www.sonarqube.org/
 
 Using Travis-CI integration
@@ -15,7 +20,7 @@ Using Travis-CI integration
 1. Travis-CI does not support dotnet 2.2 yet. Downgraded to 2.1.
 2. Following sonarqube instructions.
 [SonarCloud + Travis](https://docs.travis-ci.com/user/sonarcloud/)
-3. Generated a Token for the app and included `SONAR_TOKEN` on Travis Settings_
+3. Generated a Token for the app and included `SONAR_TOKEN` on Travis Settings
 4. Changed some configuration on sonarcloud under `Administration>General Settings`, such as Test files and source files.
 5. Add configuration to sonar-project.properties 
 [List of sonar parameters](https://docs.sonarqube.org/latest/analysis/analysis-parameters/) |
@@ -60,13 +65,13 @@ Combined Coverage![Coverage Badge](report-generator-coverage/badge_combined.svg)
 
 Includes *build history*:
 
-![Report Generator Coverage](screenshots/report-generator-coverage.PNG)
+![Report Generator Coverage](screenshots/report-generator/report-generator-coverage.PNG)
 
 You can click on a class to see its details:
-![Report Generator Addition Class](screenshots/report-generator-addition.PNG)
+![Report Generator Addition Class](screenshots/report-generator/report-generator-addition.PNG)
 
 And it shows line coverage (as shown before on Visual Studio Code).
-![Report Generator Addition Line Coverage](screenshots/report-generator-addition-line-coverage.PNG)
+![Report Generator Addition Line Coverage](screenshots/report-generator/report-generator-addition-line-coverage.PNG)
 
 Next steps are trying Grafana or SonarQube.
 #### Report Generator, getting it to work
