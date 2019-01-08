@@ -10,6 +10,7 @@ script:
   - dotnet restore
   - dotnet tool install dotnet-sonarscanner --tool-path=bin
   - dotnet tool install coverlet.console --tool-path=bin
+  - cp ./SonarQube.Analysis.xml ./bin/.store/dotnet-sonarscanner/4.5.0/dotnet-sonarscanner/4.5.0/tools/netcoreapp2.1/any/SonarQube.Analysis.xml
   - bin/dotnet-sonarscanner begin /k:"timbo:dotnet-code-coverage" /s:"SonarQube.Analysis.xml"
     #/d:sonar.sources=Calculation,PrimeService\
     #/d:sonar.inclusions=Calculation/Basic/*.cs,PrimeService/PrimeService.cs\
