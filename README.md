@@ -5,6 +5,11 @@
 
 #### SonarQube, getting it to work
 
+###### Screenshots (buggy?)
+![](screenshots/sonarcloud/sonarcloud-coverage.PNG)
+![](screenshots/sonarcloud/sonarcloud-coverage-empty-graph.PNG)
+![](screenshots/sonarcloud/sonarcloud-line-coverage.PNG)
+
 ###### Crawled through these links
 
 [Apparently sonarscanner does not work for .net projects](https://github.com/SonarSource/sonar-dotnet/issues/1034)
@@ -12,14 +17,7 @@
 [Analyzing with SonarScanner for MSBuild](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild) |
 [Analyzing with SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner)
 
-###### Screenshots (buggy?)
-![](screenshots/sonarcloud/sonarcloud-coverage.PNG)
-![](screenshots/sonarcloud/sonarcloud-coverage-empty-graph.PNG)
-![](screenshots/sonarcloud/sonarcloud-line-coverage.PNG)
-
-https://www.sonarqube.org/
-
-Using Travis-CI integration
+##### Using Travis-CI integration
 
 1. Set up Travis-ci.
 [C# Project](https://docs.travis-ci.com/user/languages/csharp/) |
