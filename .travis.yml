@@ -10,7 +10,7 @@ script:
   - dotnet restore
   - dotnet tool install dotnet-sonarscanner --tool-path=bin
   - dotnet tool install coverlet.console --tool-path=bin
-  - bin/sonarscanner begin /k:"timbo:dotnet-code-coverage"
+  - bin/dotnet-sonarscanner begin /k:"timbo:dotnet-code-coverage"
   - dotnet build
   - python bin/test_and_report.py
   - bin/dotnet-sonarscanner end
