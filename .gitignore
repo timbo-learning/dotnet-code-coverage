@@ -343,3 +343,4 @@ TODO.txt
 bin/dotnet-sonarscanner*
 bin/coverlet*
 bin/.store
+.sonarqube
