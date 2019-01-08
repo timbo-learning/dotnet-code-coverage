@@ -13,7 +13,7 @@ script:
   - dotnet bin/sonarscanner begin /k:"timbo:dotnet-code-coverage"
   - dotnet build
   - python bin/test_and_report.py
-  - dotnet sonarscanner end
+  - dotnet bin/sonarscanner end
   #- sonar-scanner -Dsonar.verbose=true
 
 addons:

@@ -5,6 +5,13 @@
 
 #### SonarQube, getting it to work
 
+###### Crawled through these links
+
+[Apparently sonarscanner does not work for .net projects](https://github.com/SonarSource/sonar-dotnet/issues/1034)
+
+[Analyzing with SonarScanner for MSBuild](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild) |
+[Analyzing with SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner)
+
 ###### Screenshots (buggy?)
 ![](screenshots/sonarcloud/sonarcloud-coverage.PNG)
 ![](screenshots/sonarcloud/sonarcloud-coverage-empty-graph.PNG)
