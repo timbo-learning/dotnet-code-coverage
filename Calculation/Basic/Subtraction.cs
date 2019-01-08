@@ -18,7 +18,7 @@ namespace Calculation.Basic
             return x - y;
         }
 
-        public void CodedOnFourthBuild()
+        public string CodedOnFourthBuild()
         {
             string foo = "";
             if (x % 2 == 0)
@@ -42,6 +42,7 @@ namespace Calculation.Basic
             foo += " tested";
             foo += " until";
             foo += " 6th build";
+            return foo;
         }
     }
 }
