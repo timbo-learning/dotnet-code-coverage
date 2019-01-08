@@ -21,10 +21,10 @@ namespace Prime.Services
             return true;  
         }
 
-        public void DoNotCoverMe() {
+        public string DoNotCoverMe() {
             var foo = "bar";
-            foo = "foobar";
-            return;
+            foo += "foobar";
+            return foo;
         }
     }
 }
