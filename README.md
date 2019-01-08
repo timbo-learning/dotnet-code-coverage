@@ -14,9 +14,11 @@
 
 [Apparently sonarscanner does not work for .net projects](https://github.com/SonarSource/sonar-dotnet/issues/1034)
 
-[Analyzing with SonarScanner for MSBuild](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild) |
 [Analyzing with SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner)
 
+[SonarQube Overview](https://docs.sonarqube.org/latest/analysis/overview/)
+
+<!-- https://docs.sonarqube.org/display/PLUG/Python+Coverage+Results+Import -->
 ##### Using Travis-CI integration
 
 1. Set up Travis-ci.
@@ -26,13 +28,16 @@
 2. Following sonarqube instructions.
 [SonarCloud + Travis](https://docs.travis-ci.com/user/sonarcloud/)
 3. Generated a Token for the app and included `SONAR_TOKEN` on Travis Settings
-4. Changed some configuration on sonarcloud under `Administration>General Settings`, such as Test files and source files.
+<!-- 4. Changed some configuration on sonarcloud under `Administration>General Settings`, such as Test files and source files. -->
 5. Add configuration to sonar-project.properties 
 [List of sonar parameters](https://docs.sonarqube.org/latest/analysis/analysis-parameters/) |
 [sonar-project.properties example](https://github.com/SonarSource/sonar-scanning-examples/blob/master/sonarqube-scanner/sonar-project.properties)
-6. 
+6. Changing to SonarScanner for MSBuild [Analyzing with SonarScanner for MSBuild](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild)
 7. 
 
+###### Installing Docker for Windows to run Travis-CI locally
+
+[Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 #### Report Generator 
 
 Generates a very descriptive `index.htm` under `report-generator-coverage`,
