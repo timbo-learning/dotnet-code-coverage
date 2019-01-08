@@ -8,9 +8,13 @@ jdk:
 
 script:
   - dotnet restore
+  - dotnet tool install dotnet-sonarscanner --tool-path=bin
   - dotnet tool install coverlet.console --tool-path=bin
+  - dotnet sonarscanner begin /k:"timbo:dotnet-code-coverage"
+  - dotnet build
   - python bin/test_and_report.py
-  - sonar-scanner -Dsonar.verbose=true
+  - dotnet sonarscanner end
+  #- sonar-scanner -Dsonar.verbose=true
 
 addons:
   sonarcloud:
