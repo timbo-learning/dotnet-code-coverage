@@ -7,7 +7,7 @@ script:
   - dotnet restore
   - dotnet tool install coverlet.console --tool-path=bin
   - python bin/test_and_report.py
-  - sonar-scanner
+  - sonar-scanner -Dsonar.verbose=true
 
 addons:
   sonarcloud:
