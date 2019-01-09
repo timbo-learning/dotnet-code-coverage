@@ -21,9 +21,9 @@
   <!--
   <Property Name="sonar.host.url">http://localhost:9000</Property>
 
-  <Property Name="sonar.login"></Property>
   <Property Name="sonar.password"></Property>
   -->
+  <Property Name="sonar.login">08c0179474065eb1c90b8c97f30b4ce67cf85e69</Property>
   <Property Name="sonar.sources">Calculation,PrimeService</Property>
   <Property Name="sonar.inclusions">Calculation/Basic/*.cs,PrimeService/PrimeService.cs</Property>
   <Property Name="sonar.exclusions">Calculation/*.csproj,Calculation/bin/**/*,Calculation/obj/**/*,PrimeService/bin/**/*,PrimeService/obj/**/*</Property>
