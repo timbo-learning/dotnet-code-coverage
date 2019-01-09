@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import os
 import argparse
+import config
 
 def validate_args(args):
     if not args.testfolder:
@@ -11,7 +12,7 @@ def validate_args(args):
 def parse_arguments(raw_args):
     parser = argparse.ArgumentParser()
     parser.add_argument('-tf', '--testfolder',
-        default=os.getenv('testfolder', None )
+        default=os.getenv('testfolder', config.calculationFolder )
         )
     parser.add_argument('-f', '--format',
         default=os.getenv('format', 'opencover')
@@ -20,7 +21,7 @@ def parse_arguments(raw_args):
         default=os.getenv('output', 'output.opencover.xml')
         )
     parser.add_argument('-t', '--target',
-        default=os.getenv('target', None )
+        default=os.getenv('target', config.calculationTarget )
         )
     parser.add_argument('--test', dest='test', action='store_true')
     parser.add_argument('--no-test', dest='test', action='store_false')
