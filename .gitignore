@@ -344,4 +344,4 @@ bin/dotnet-sonarscanner*
 bin/coverlet*
 bin/.store
 .sonarqube
-./bin/SonarQube.Analysis.xml
+bin/SonarQube.Analysis.xml
