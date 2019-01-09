@@ -1,6 +1,6 @@
 # Timbó status report
 
-![Build status](https://travis-ci.com/timbo-learning/dotnet-code-coverage.svg?branch=master) on Travis
+![Build status](https://travis-ci.com/timbo-learning/dotnet-code-coverage.svg?branch=travis) on Travis
 
 ![Coverage Badge](report-generator-coverage/badge_combined.svg) on ReportGenerator
 

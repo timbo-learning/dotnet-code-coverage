@@ -9,11 +9,13 @@ FNDA:0,System.String Calculation.Basic.Addition::NotCoveredByTests()
 DA:24,0
 DA:25,0
 DA:26,0
-FN:28,System.String Calculation.Basic.Addition::CoveredOnNextBuild()
+DA:27,0
+FN:29,System.String Calculation.Basic.Addition::CoveredOnNextBuild()
 FNDA:1,System.String Calculation.Basic.Addition::CoveredOnNextBuild()
-DA:29,1
 DA:30,1
 DA:31,1
+DA:32,1
+DA:33,1
 FN:11,System.Void Calculation.Basic.Addition::.ctor(System.Decimal,System.Decimal)
 FNDA:5,System.Void Calculation.Basic.Addition::.ctor(System.Decimal,System.Decimal)
 DA:12,5
@@ -21,8 +23,8 @@ DA:13,5
 DA:14,5
 DA:15,5
 DA:16,5
-LF:14
-LH:11
+LF:16
+LH:12
 BRF:0
 BRH:0
 FNF:4

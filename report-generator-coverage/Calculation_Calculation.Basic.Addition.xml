@@ -6,11 +6,11 @@
     <Files>
       <File>C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs</File>
     </Files>
-    <Coveredlines>11</Coveredlines>
-    <Uncoveredlines>3</Uncoveredlines>
-    <Coverablelines>14</Coverablelines>
-    <Totallines>33</Totallines>
-    <Linecoverage>78.5%</Linecoverage>
+    <Coveredlines>12</Coveredlines>
+    <Uncoveredlines>4</Uncoveredlines>
+    <Coverablelines>16</Coverablelines>
+    <Totallines>35</Totallines>
+    <Linecoverage>75%</Linecoverage>
   </Summary>
   <Metrics>
     <Element name="ctor">
@@ -64,15 +64,17 @@
       <LineAnalysis line="22" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
       <LineAnalysis line="23" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public string NotCoveredByTests()" />
       <LineAnalysis line="24" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        {" />
-      <LineAnalysis line="25" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            return &quot;this method is not being tested&quot;;" />
-      <LineAnalysis line="26" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        }" />
-      <LineAnalysis line="27" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
-      <LineAnalysis line="28" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public string CoveredOnNextBuild()" />
-      <LineAnalysis line="29" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="        {" />
-      <LineAnalysis line="30" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            return &quot;this method is covered on a second build&quot;;" />
-      <LineAnalysis line="31" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
-      <LineAnalysis line="32" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
-      <LineAnalysis line="33" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
+      <LineAnalysis line="25" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            string foo = &quot;this method is not being tested&quot;;" />
+      <LineAnalysis line="26" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            return foo;" />
+      <LineAnalysis line="27" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="28" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="29" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public string CoveredOnNextBuild()" />
+      <LineAnalysis line="30" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="        {" />
+      <LineAnalysis line="31" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            string foo = &quot;this method is covered on a second build&quot;;" />
+      <LineAnalysis line="32" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            return foo;" />
+      <LineAnalysis line="33" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="34" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
+      <LineAnalysis line="35" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
     </File>
   </Files>
 </CoverageReport>

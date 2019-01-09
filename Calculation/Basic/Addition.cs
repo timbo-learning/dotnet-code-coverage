@@ -22,12 +22,14 @@ namespace Calculation.Basic
 
         public string NotCoveredByTests()
         {
-            return "this method is not being tested";
+            string foo = "this method is not being tested";
+            return foo;
         }
 
         public string CoveredOnNextBuild()
         {
-            return "this method is covered on a second build";
+            string foo = "this method is covered on a second build";
+            return foo;
         }
     }
 }
