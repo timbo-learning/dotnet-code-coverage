@@ -28,7 +28,6 @@
   <!-- local sonarqube -->
   <!-- -->
   <Property Name="sonar.login">026e18fc66acc61167a6f721490cb38ebbe54b88</Property>
-  <Property Name="sonar.host.url">http://localhost:9000</Property>
   <Property Name="sonar.projectKey">dotnet-local</Property>
   <!-- -->
   <!--sonarcloud -->
