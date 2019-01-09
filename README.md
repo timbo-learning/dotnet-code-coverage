@@ -1,6 +1,12 @@
 # Timbó status report
-![Build status](https://travis-ci.com/timbo-learning/dotnet-code-coverage.svg?branch=master)
-![Coverage Badge](report-generator-coverage/badge_combined.svg)
+
+![Build status](https://travis-ci.com/timbo-learning/dotnet-code-coverage.svg?branch=master) on Travis
+
+![Coverage Badge](report-generator-coverage/badge_combined.svg) on ReportGenerator
+
+![Code Coverage](https://sonarcloud.io/api/project_badges/measure?project=timbo%3Adotnet-code-coverage&metric=coverage)
+![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=timbo%3Adotnet-code-coverage&metric=ncloc)
+<img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" height="22">
 ## Graphic Report
 
 #### SonarQube, getting it to work
