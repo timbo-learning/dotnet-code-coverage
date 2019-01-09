@@ -23,10 +23,24 @@
 
   <Property Name="sonar.password"></Property>
   -->
+
+
+  <!-- local sonarqube -->
+  <!-- -->
+  <Property Name="sonar.login">026e18fc66acc61167a6f721490cb38ebbe54b88</Property>
+  <Property Name="sonar.host.url">http://localhost:9000</Property>
+  <Property Name="sonar.projectKey">dotnet-local</Property>
+  <!-- -->
+  <!--sonarcloud -->
+  <!--
   <Property Name="sonar.login">08c0179474065eb1c90b8c97f30b4ce67cf85e69</Property>
+  <Property Name="sonar.host.url">https://sonarcloud.io</Property>
+  <Property Name="sonar.projectKey">timbo:dotnet-code-coverage</Property>
+  -->
+
   <Property Name="sonar.sources">Calculation,PrimeService</Property>
   <Property Name="sonar.inclusions">Calculation/Basic/*.cs,PrimeService/PrimeService.cs</Property>
-  <Property Name="sonar.exclusions">Calculation/*.csproj,Calculation/bin/**/*,Calculation/obj/**/*,PrimeService/bin/**/*,PrimeService/obj/**/*</Property>
+  <!-- <Property Name="sonar.exclusions">Calculation/bin/**/*,Calculation/obj/**/*,PrimeService/bin/**/*,PrimeService/obj/**/*</Property> -->
   <Property Name="sonar.tests">CalculationTests,PrimeServiceTests</Property>
   <Property Name="sonar.test.inclusions">CalculationTests/*.cs,PrimeServiceTests/*.cs</Property>
   <Property Name="sonar.cs.opencover.reportsPaths">calculation.opencover.xml,prime.opencover.xml</Property>
