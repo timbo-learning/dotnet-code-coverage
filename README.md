@@ -18,6 +18,8 @@
 
 [SonarQube Overview](https://docs.sonarqube.org/latest/analysis/overview/)
 
+[Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
+
 <!-- https://docs.sonarqube.org/display/PLUG/Python+Coverage+Results+Import -->
 ##### Using Travis-CI integration
 
@@ -35,9 +37,10 @@
 6. Changing to SonarScanner for MSBuild [Analyzing with SonarScanner for MSBuild](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild)
 7. 
 
-###### Installing Docker for Windows to run Travis-CI locally
 
-[Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
+#### Jenkins
+
+
 #### Report Generator 
 
 Generates a very descriptive `index.htm` under `report-generator-coverage`,
