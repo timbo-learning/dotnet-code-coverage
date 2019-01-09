@@ -1,11 +1,13 @@
 # Timbó status report
 
-![Build status](https://travis-ci.com/timbo-learning/dotnet-code-coverage.svg?branch=travis) on Travis
+![Build status](https://travis-ci.com/timbo-learning/dotnet-code-coverage.svg?branch=travis) on [Travis](https://travis-ci.com/timbo-learning/dotnet-code-coverage)
 
-![Coverage Badge](report-generator-coverage/badge_combined.svg) on ReportGenerator
+![Coverage Badge](report-generator-coverage/badge_combined.svg) by ReportGenerator
 
+![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=timbo%3Adotnet-code-coverage&metric=code_smells)
 ![Code Coverage](https://sonarcloud.io/api/project_badges/measure?project=timbo%3Adotnet-code-coverage&metric=coverage)
 ![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=timbo%3Adotnet-code-coverage&metric=ncloc)
+![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=timbo%3Adotnet-code-coverage&metric=alert_status)
 <img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" height="22">
 ## Graphic Report
 
