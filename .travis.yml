@@ -6,6 +6,14 @@ python: 3.6
 jdk:
   - oraclejdk8
 
+branches:
+  except:
+    - jenkins
+  only:
+    - travis
+    - travis-ci
+    - master
+
 script:
   - dotnet restore
   - dotnet tool install dotnet-sonarscanner --tool-path=bin
