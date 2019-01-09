@@ -23,13 +23,13 @@ namespace Calculation.Basic
             string foo = "";
             if (x % 2 == 0)
             {
-                foo = "branch 1 coverage test";
+                foo += "branch 1 coverage test";
             } else
             {
-                foo = "branch 2 coverage test";
+                foo += "branch 2 coverage test";
             }
 
-            foo = "really";
+            foo += "\nreally";
             foo += " long";
             foo += " operation";
             foo += " with";

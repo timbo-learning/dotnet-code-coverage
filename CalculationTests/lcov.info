@@ -4,8 +4,8 @@ FNDA:3,System.Decimal Calculation.Basic.Addition::Calculate()
 DA:19,3
 DA:20,3
 DA:21,3
-FN:23,System.Void Calculation.Basic.Addition::NotCoveredByTests()
-FNDA:0,System.Void Calculation.Basic.Addition::NotCoveredByTests()
+FN:23,System.String Calculation.Basic.Addition::NotCoveredByTests()
+FNDA:0,System.String Calculation.Basic.Addition::NotCoveredByTests()
 DA:24,0
 DA:25,0
 DA:26,0
@@ -74,8 +74,8 @@ FNDA:3,System.Decimal Calculation.Basic.Subtraction::Calculate()
 DA:17,3
 DA:18,3
 DA:19,3
-FN:21,System.Void Calculation.Basic.Subtraction::CodedOnFourthBuild()
-FNDA:2,System.Void Calculation.Basic.Subtraction::CodedOnFourthBuild()
+FN:21,System.String Calculation.Basic.Subtraction::CodedOnFourthBuild()
+FNDA:2,System.String Calculation.Basic.Subtraction::CodedOnFourthBuild()
 DA:22,2
 DA:23,2
 DA:24,2
@@ -99,6 +99,7 @@ DA:42,2
 DA:43,2
 DA:44,2
 DA:45,2
+DA:46,2
 BRDA:24,36,0,1
 BRDA:24,36,1,1
 FN:9,System.Void Calculation.Basic.Subtraction::.ctor(System.Decimal,System.Decimal)
@@ -108,8 +109,8 @@ DA:11,5
 DA:12,5
 DA:13,5
 DA:14,5
-LF:31
-LH:31
+LF:32
+LH:32
 BRF:2
 BRH:2
 FNF:3

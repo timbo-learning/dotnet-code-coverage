@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageSession>
-  <Summary numSequencePoints="61" visitedSequencePoints="58" numBranchPoints="61" visitedBranchPoints="58" sequenceCoverage="0.951" branchCoverage="0.951" maxCyclomaticComplexity="12" minCyclomaticComplexity="12" visitedClasses="4" numClasses="4" visitedMethods="10" numMethods="11" />
+  <Summary numSequencePoints="62" visitedSequencePoints="59" numBranchPoints="62" visitedBranchPoints="59" sequenceCoverage="0.952" branchCoverage="0.952" maxCyclomaticComplexity="12" minCyclomaticComplexity="12" visitedClasses="4" numClasses="4" visitedMethods="10" numMethods="11" />
   <Modules>
-    <Module hash="D4799BB0-B731-4F47-96EA-6C170D261FBB">
+    <Module hash="27755D51-D24C-41C8-89F1-D6733385D8FF">
       <ModulePath>Calculation.dll</ModulePath>
-      <ModuleTime>2019-01-04T11:00:13</ModuleTime>
+      <ModuleTime>2019-01-09T09:19:35</ModuleTime>
       <ModuleName>Calculation</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs" />
@@ -33,7 +33,7 @@
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="1" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="1" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
-              <Name>System.Void Calculation.Basic.Addition::NotCoveredByTests()</Name>
+              <Name>System.String Calculation.Basic.Addition::NotCoveredByTests()</Name>
               <FileRef uid="1" />
               <SequencePoints>
                 <SequencePoint vc="0" upsid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="1" />
@@ -142,7 +142,7 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="31" visitedSequencePoints="31" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="1" branchCoverage="1" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <Summary numSequencePoints="32" visitedSequencePoints="32" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="1" branchCoverage="1" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
           <FullName>Calculation.Basic.Subtraction</FullName>
           <Methods>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="1" branchCoverage="1" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
@@ -159,9 +159,9 @@
               <MethodPoint vc="3" upsid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="19" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="1" branchCoverage="1" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="23" visitedSequencePoints="23" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="1" branchCoverage="1" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <Summary numSequencePoints="24" visitedSequencePoints="24" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="1" branchCoverage="1" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
-              <Name>System.Void Calculation.Basic.Subtraction::CodedOnFourthBuild()</Name>
+              <Name>System.String Calculation.Basic.Subtraction::CodedOnFourthBuild()</Name>
               <FileRef uid="4" />
               <SequencePoints>
                 <SequencePoint vc="2" upsid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="4" />
@@ -187,12 +187,13 @@
                 <SequencePoint vc="2" upsid="43" ordinal="20" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="4" />
                 <SequencePoint vc="2" upsid="44" ordinal="21" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="4" />
                 <SequencePoint vc="2" upsid="45" ordinal="22" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" upsid="46" ordinal="23" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="4" />
               </SequencePoints>
               <BranchPoints>
                 <BranchPoint vc="1" upsid="24" ordinal="0" path="0" offset="36" offsetend="38" sl="24" fileid="4" />
-                <BranchPoint vc="1" upsid="24" ordinal="1" path="1" offset="36" offsetend="48" sl="24" fileid="4" />
+                <BranchPoint vc="1" upsid="24" ordinal="1" path="1" offset="36" offsetend="54" sl="24" fileid="4" />
               </BranchPoints>
-              <MethodPoint vc="23" upsid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="22" ec="1" el="45" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+              <MethodPoint vc="24" upsid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="22" ec="1" el="46" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="1" branchCoverage="1" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="1" branchCoverage="1" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />

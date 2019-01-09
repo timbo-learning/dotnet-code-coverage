@@ -20,9 +20,9 @@ namespace Calculation.Basic
             return x + y;
         }
 
-        public void NotCoveredByTests()
+        public string NotCoveredByTests()
         {
-            string foo = "this method is not being tested";
+            return "this method is not being tested";
         }
 
         public string CoveredOnNextBuild()

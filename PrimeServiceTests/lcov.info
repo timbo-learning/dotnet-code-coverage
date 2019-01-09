@@ -19,8 +19,8 @@ BRDA:14,57,1,7
 BRDA:16,27,0,4
 BRDA:16,27,1,3
 BRDA:14,57,0,4
-FN:23,System.Void Prime.Services.PrimeService::DoNotCoverMe()
-FNDA:0,System.Void Prime.Services.PrimeService::DoNotCoverMe()
+FN:23,System.String Prime.Services.PrimeService::DoNotCoverMe()
+FNDA:0,System.String Prime.Services.PrimeService::DoNotCoverMe()
 DA:24,0
 DA:25,0
 DA:26,0

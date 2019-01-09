@@ -52,10 +52,10 @@
       <LineAnalysis line="21" visits="4" coverage="Covered" coveredbranches="" totalbranches="" content="            return true;" />
       <LineAnalysis line="22" visits="11" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
       <LineAnalysis line="23" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
-      <LineAnalysis line="24" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        public void DoNotCoverMe() {" />
+      <LineAnalysis line="24" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        public string DoNotCoverMe() {" />
       <LineAnalysis line="25" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            var foo = &quot;bar&quot;;" />
-      <LineAnalysis line="26" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            foo = &quot;foobar&quot;;" />
-      <LineAnalysis line="27" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            return;" />
+      <LineAnalysis line="26" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            foo += &quot;foobar&quot;;" />
+      <LineAnalysis line="27" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            return foo;" />
       <LineAnalysis line="28" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        }" />
       <LineAnalysis line="29" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
       <LineAnalysis line="30" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />

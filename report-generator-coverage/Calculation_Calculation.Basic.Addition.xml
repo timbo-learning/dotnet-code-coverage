@@ -62,9 +62,9 @@
       <LineAnalysis line="20" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="            return x + y;" />
       <LineAnalysis line="21" visits="3" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
       <LineAnalysis line="22" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
-      <LineAnalysis line="23" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public void NotCoveredByTests()" />
+      <LineAnalysis line="23" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public string NotCoveredByTests()" />
       <LineAnalysis line="24" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        {" />
-      <LineAnalysis line="25" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            string foo = &quot;this method is not being tested&quot;;" />
+      <LineAnalysis line="25" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            return &quot;this method is not being tested&quot;;" />
       <LineAnalysis line="26" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        }" />
       <LineAnalysis line="27" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
       <LineAnalysis line="28" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public string CoveredOnNextBuild()" />

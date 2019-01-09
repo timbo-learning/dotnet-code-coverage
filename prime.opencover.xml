@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="17" visitedSequencePoints="12" numBranchPoints="17" visitedBranchPoints="12" sequenceCoverage="0.706" branchCoverage="0.706" maxCyclomaticComplexity="7" minCyclomaticComplexity="7" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
   <Modules>
-    <Module hash="4D259108-F344-4E53-8DD7-6CD699E9E657">
+    <Module hash="07F47FEA-9557-438A-A458-9AC1412C5D88">
       <ModulePath>PrimeService.dll</ModulePath>
-      <ModuleTime>2019-01-04T11:00:10</ModuleTime>
+      <ModuleTime>2019-01-09T09:19:32</ModuleTime>
       <ModuleName>PrimeService</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\PrimeService\PrimeService.cs" />
@@ -46,7 +46,7 @@
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="1" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="1" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken />
-              <Name>System.Void Prime.Services.PrimeService::DoNotCoverMe()</Name>
+              <Name>System.String Prime.Services.PrimeService::DoNotCoverMe()</Name>
               <FileRef uid="1" />
               <SequencePoints>
                 <SequencePoint vc="0" upsid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="1" />

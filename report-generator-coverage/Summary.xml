@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>1/4/2019 - 6:00:20 PM</Generatedon>
+    <Generatedon>1/9/2019 - 4:19:43 PM</Generatedon>
     <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
     <Classes>5</Classes>
     <Files>5</Files>
-    <Coveredlines>70</Coveredlines>
+    <Coveredlines>71</Coveredlines>
     <Uncoveredlines>8</Uncoveredlines>
-    <Coverablelines>78</Coverablelines>
-    <Totallines>151</Totallines>
-    <Linecoverage>89.7%</Linecoverage>
+    <Coverablelines>79</Coverablelines>
+    <Totallines>152</Totallines>
+    <Linecoverage>89.8%</Linecoverage>
     <Branchcoverage>100%</Branchcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="Calculation" classes="4" coverage="95" coveredlines="58" coverablelines="61" totallines="121" branchcoverage="100" coveredbranches="2" totalbranches="2">
+    <Assembly name="Calculation" classes="4" coverage="95.1" coveredlines="59" coverablelines="62" totallines="122" branchcoverage="100" coveredbranches="2" totalbranches="2">
       <Class name="Calculation.Basic.Addition" coverage="78.5" coveredlines="11" coverablelines="14" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="Calculation.Basic.Division" coverage="100" coveredlines="8" coverablelines="8" totallines="21" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="Calculation.Basic.Multiplication" coverage="100" coveredlines="8" coverablelines="8" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="Calculation.Basic.Subtraction" coverage="100" coveredlines="31" coverablelines="31" totallines="48" branchcoverage="100" coveredbranches="2" totalbranches="2" />
+      <Class name="Calculation.Basic.Subtraction" coverage="100" coveredlines="32" coverablelines="32" totallines="49" branchcoverage="100" coveredbranches="2" totalbranches="2" />
     </Assembly>
     <Assembly name="PrimeService" classes="1" coverage="70.5" coveredlines="12" coverablelines="17" totallines="30" branchcoverage="100" coveredbranches="6" totalbranches="6">
       <Class name="Prime.Services.PrimeService" coverage="70.5" coveredlines="12" coverablelines="17" totallines="30" branchcoverage="100" coveredbranches="6" totalbranches="6" />
