@@ -26,15 +26,15 @@
 
 
   <!-- local sonarqube -->
-  <!-- -->
+  <!--
   <Property Name="sonar.login">026e18fc66acc61167a6f721490cb38ebbe54b88</Property>
   <Property Name="sonar.projectKey">dotnet-local</Property>
-  <!-- -->
+  -->
   <!--sonarcloud -->
-  <!--
+  <!-- -->
   <Property Name="sonar.login">08c0179474065eb1c90b8c97f30b4ce67cf85e69</Property>
   <Property Name="sonar.host.url">https://sonarcloud.io</Property>
-  -->
+  <!-- -->
 
   <!--
   <Property Name="sonar.sources">Calculation,PrimeService</Property>
