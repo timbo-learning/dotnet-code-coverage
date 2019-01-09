@@ -44,9 +44,9 @@
   <Property Name="sonar.exclusions">Calculation/bin/**/*,Calculation/obj/**/*,PrimeService/bin/**/*,PrimeService/obj/**/*</Property>
   <Property Name="sonar.tests">CalculationTests,PrimeServiceTests</Property>
   <Property Name="sonar.test.inclusions">CalculationTests/*.cs,PrimeServiceTests/*.cs</Property>
+  -->
   <Property Name="sonar.cs.opencover.reportsPaths">calculation.opencover.xml,prime.opencover.xml</Property>
   <Property Name="sonar.dotnet.visualstudio.solution.file">unit-testing-using-dotnet-test.sln</Property>
-  -->
 
   <!-- Required only for versions of SonarQube prior to 5.2 -->
   <!--
