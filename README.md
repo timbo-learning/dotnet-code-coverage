@@ -11,12 +11,24 @@
 <img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" height="22">
 ## Graphic Report
 
+#### SonarQube
+
+Results available on [Sonarcloud](https://sonarcloud.io/dashboard?id=timbo%3Adotnet-code-coverage)
+
+More diff-like comparison, focused on new code and previous build
+
+![Sonarcloud Coverage](screenshots/sonarcloud/sonarcloud-coverage.PNG)
+Uncovered Lines
+![Uncovered Lines](screenshots/sonarcloud/sonarcloud-uncovered-lines.PNG)
+Coverage Chart
+![Coverage Chart](screenshots/sonarcloud/sonarcloud-coverage-chart.PNG)
+
 #### SonarQube, getting it to work
 
 ###### Screenshots (buggy?)
-![](screenshots/sonarcloud/sonarcloud-coverage.PNG)
-![](screenshots/sonarcloud/sonarcloud-coverage-empty-graph.PNG)
-![](screenshots/sonarcloud/sonarcloud-line-coverage.PNG)
+![](screenshots/sonarcloud/bug/sonarcloud-coverage.PNG)
+![](screenshots/sonarcloud/bug/sonarcloud-coverage-empty-graph.PNG)
+![](screenshots/sonarcloud/bug/sonarcloud-line-coverage.PNG)
 
 ###### Crawled through these links
 
