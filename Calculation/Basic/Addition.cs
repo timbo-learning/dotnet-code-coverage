@@ -31,5 +31,20 @@ namespace Calculation.Basic
             string foo = "this method is covered on a second build";
             return foo;
         }
+
+        public void JenkinsBuild()
+        {
+            decimal z = x;
+            z++;
+            z += y;
+            z += x;
+            z++;
+            z++;
+            z++;
+            z++;
+            z++;
+            z++;
+            z++;
+        }
     }
 }
