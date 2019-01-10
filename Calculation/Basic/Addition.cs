@@ -32,7 +32,7 @@ namespace Calculation.Basic
             return foo;
         }
 
-        public void JenkinsBuild()
+        public decimal JenkinsBuild()
         {
             decimal z = x;
             z++;
@@ -45,6 +45,9 @@ namespace Calculation.Basic
             z++;
             z++;
             z++;
+            z -= 2;
+            z += x + y;
+            return z;
         }
     }
 }
