@@ -68,6 +68,8 @@ Coverage Chart
 
 #### Jenkins
 
+Installed Jenkins locally.
+
 #### Grafana
 
 Grafana seems to be more for DevOps Runtime metrics rather than development testing for code coverage.
