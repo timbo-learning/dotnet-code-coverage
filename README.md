@@ -22,6 +22,9 @@ Results available on [Sonarcloud](https://sonarcloud.io/dashboard?id=timbo%3Adot
 5. Graphical Report
 6. Compatible with xUnit
 
+These have been ensured because I run the tools both locally on the Windows machine,
+and on Travis with the trusty linux distribution, all with cross-platform python scripts
+
 ![Sonarcloud Coverage](screenshots/sonarcloud/sonarcloud-coverage.PNG)
 Uncovered Lines
 ![Uncovered Lines](screenshots/sonarcloud/sonarcloud-uncovered-lines.PNG)
@@ -81,7 +84,7 @@ showing line coverage, branch coverage, covered lines, build history.
 1. Coverage History
 3. Integrates into build process
 4. cross-platform
-    1. Error on Travis: `Error during rendering summary report (Report type: 'Badges'): Arial could not be found`
+    1. Error on Travis(Linux): `Error during rendering summary report (Report type: 'Badges'): Arial could not be found`
 5. Graphical Report
 6. Compatible with xUnit
 1. Cannot see line coverage of past builds
