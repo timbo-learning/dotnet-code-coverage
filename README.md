@@ -21,6 +21,7 @@ Results available on [Sonarcloud](https://sonarcloud.io/dashboard?id=timbo%3Adot
 4. cross-platform
 5. Graphical Report
 6. Compatible with xUnit
+7. Does not offer Branch Coverage like ReportGenerator
 
 These have been ensured because I run the tools both locally on the Windows machine,
 and on Travis with the trusty linux distribution, all with cross-platform python scripts
