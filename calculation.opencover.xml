@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="80" visitedSequencePoints="60" numBranchPoints="80" visitedBranchPoints="60" sequenceCoverage="0.75" branchCoverage="0.75" maxCyclomaticComplexity="13" minCyclomaticComplexity="13" visitedClasses="4" numClasses="4" visitedMethods="10" numMethods="12" />
   <Modules>
-    <Module hash="C6BAC74A-8378-453D-9E30-806F929830F7">
+    <Module hash="373865D5-C957-43DE-A1C1-1EFAC084D464">
       <ModulePath>Calculation.dll</ModulePath>
-      <ModuleTime>2019-01-10T10:57:49</ModuleTime>
+      <ModuleTime>2019-01-10T11:29:45</ModuleTime>
       <ModuleName>Calculation</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs" />
