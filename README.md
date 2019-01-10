@@ -15,7 +15,12 @@
 
 Results available on [Sonarcloud](https://sonarcloud.io/dashboard?id=timbo%3Adotnet-code-coverage)
 
-More diff-like comparison, focused on new code and previous build
+1. More diff-like comparison, focused on new code and previous build, but still has history.
+2. Coverage History
+3. Integrates into build process
+4. cross-platform
+5. Graphical Report
+6. Compatible with xUnit
 
 ![Sonarcloud Coverage](screenshots/sonarcloud/sonarcloud-coverage.PNG)
 Uncovered Lines
@@ -60,13 +65,26 @@ Coverage Chart
 
 #### Jenkins
 
+#### Grafana
+
+Grafana seems to be more for DevOps Runtime metrics rather than development testing for code coverage.
+Skipping
+
+[Grafana Live Demo](http://play.grafana.org/)
+![Grafana Live Demo](screenshots/grafana/grafana-demo.PNG)
 
 #### Report Generator 
 
 Generates a very descriptive `index.htm` under `report-generator-coverage`,
 showing line coverage, branch coverage, covered lines, build history.
 
-! Cannot see line coverage of past builds
+1. Coverage History
+3. Integrates into build process
+4. cross-platform
+    1. Error on Travis: `Error during rendering summary report (Report type: 'Badges'): Arial could not be found`
+5. Graphical Report
+6. Compatible with xUnit
+1. Cannot see line coverage of past builds
 
 on the project, run:
 
