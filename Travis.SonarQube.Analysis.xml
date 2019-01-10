@@ -24,6 +24,7 @@
   <Property Name="sonar.password"></Property>
   -->
 
+  <Property Name="sonar.projectVersion">2.1.1</Property>
 
   <!-- local sonarqube -->
   <!--
