@@ -25,6 +25,8 @@ Results available on [Sonarcloud](https://sonarcloud.io/dashboard?id=timbo%3Adot
 These have been ensured because I run the tools both locally on the Windows machine,
 and on Travis with the trusty linux distribution, all with cross-platform python scripts
 
+![Overview](screenshots/sonarcloud/sonarcloud-overview.PNG)
+
 ![Sonarcloud Coverage](screenshots/sonarcloud/sonarcloud-coverage.PNG)
 Uncovered Lines
 ![Uncovered Lines](screenshots/sonarcloud/sonarcloud-uncovered-lines.PNG)
