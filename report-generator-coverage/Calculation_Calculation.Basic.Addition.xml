@@ -7,10 +7,10 @@
       <File>C:\Users\rtimbo\source\repos\unit-testing-using-dotnet-test\Calculation\Basic\Addition.cs</File>
     </Files>
     <Coveredlines>12</Coveredlines>
-    <Uncoveredlines>4</Uncoveredlines>
-    <Coverablelines>16</Coverablelines>
-    <Totallines>35</Totallines>
-    <Linecoverage>75%</Linecoverage>
+    <Uncoveredlines>20</Uncoveredlines>
+    <Coverablelines>32</Coverablelines>
+    <Totallines>53</Totallines>
+    <Linecoverage>37.5%</Linecoverage>
   </Summary>
   <Metrics>
     <Element name="ctor">
@@ -35,6 +35,12 @@
       <Cyclomaticcomplexity>1</Cyclomaticcomplexity>
       <NPathcomplexity>0</NPathcomplexity>
       <Sequencecoverage>1</Sequencecoverage>
+      <Branchcoverage>1</Branchcoverage>
+    </Element>
+    <Element name="JenkinsBuild">
+      <Cyclomaticcomplexity>1</Cyclomaticcomplexity>
+      <NPathcomplexity>0</NPathcomplexity>
+      <Sequencecoverage>0</Sequencecoverage>
       <Branchcoverage>1</Branchcoverage>
     </Element>
   </Metrics>
@@ -73,8 +79,26 @@
       <LineAnalysis line="31" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            string foo = &quot;this method is covered on a second build&quot;;" />
       <LineAnalysis line="32" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="            return foo;" />
       <LineAnalysis line="33" visits="1" coverage="Covered" coveredbranches="" totalbranches="" content="        }" />
-      <LineAnalysis line="34" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
-      <LineAnalysis line="35" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
+      <LineAnalysis line="34" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="35" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public decimal JenkinsBuild()" />
+      <LineAnalysis line="36" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        {" />
+      <LineAnalysis line="37" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            decimal z = x;" />
+      <LineAnalysis line="38" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z++;" />
+      <LineAnalysis line="39" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z += y;" />
+      <LineAnalysis line="40" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z += x;" />
+      <LineAnalysis line="41" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z++;" />
+      <LineAnalysis line="42" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z++;" />
+      <LineAnalysis line="43" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z++;" />
+      <LineAnalysis line="44" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z++;" />
+      <LineAnalysis line="45" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z++;" />
+      <LineAnalysis line="46" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z++;" />
+      <LineAnalysis line="47" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z++;" />
+      <LineAnalysis line="48" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z -= 2;" />
+      <LineAnalysis line="49" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            z += x + y;" />
+      <LineAnalysis line="50" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            return z;" />
+      <LineAnalysis line="51" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="52" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
+      <LineAnalysis line="53" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
     </File>
   </Files>
 </CoverageReport>
