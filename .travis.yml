@@ -2,7 +2,7 @@ dist: trusty
 language: csharp
 solution: unit-testing-using-dotnet-test.sln
 dotnet: 2.1.502
-python: 3.7
+python: 3.6
 jdk:
   - oraclejdk8
 
@@ -16,7 +16,7 @@ branches:
 
 script:
   - cp ./Travis.SonarQube.Analysis.xml ./SonarQube.Analysis.xml
-  - python bin/build.py -k "timbo:dotnet-code-coverage"
+  - python3 bin/build.py -k "timbo:dotnet-code-coverage"
   #- bin/dotnet-sonarscanner begin /k:"timbo:dotnet-code-coverage" #/s:"SonarQube.Analysis.xml"
   #/d:sonar.sources=Calculation,PrimeService\
   #/d:sonar.inclusions=Calculation/Basic/*.cs,PrimeService/PrimeService.cs\
