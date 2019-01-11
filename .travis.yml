@@ -2,7 +2,7 @@ dist: trusty
 language: csharp
 solution: unit-testing-using-dotnet-test.sln
 dotnet: 2.1.502
-python: 3.6
+python: 3.7
 jdk:
   - oraclejdk8
 
