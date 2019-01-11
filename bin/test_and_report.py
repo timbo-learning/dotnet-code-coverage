@@ -5,7 +5,7 @@ import lcov
 import report_generator
 from config import *
 
-def main():
+def main(args=None):
 
     coverlet.main([
         '--testfolder', primeFolder,

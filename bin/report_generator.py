@@ -51,7 +51,7 @@ def main(raw_args=None):
     args = parse_arguments(raw_args)
     log = logger.Logger(name=reportgenerator, format='level')
 
-    log.infoTitle(reportgenerator)
+    log.infoTitle()
 
     if args.chdir:
         os.chdir(config.calculationFolder)
@@ -64,7 +64,7 @@ def main(raw_args=None):
     if args.chdir:
         os.chdir('..')
 
-    log.infoTitle('End of ' + reportgenerator, breakLine=False)
+    log.infoEndTitle()
 
 if __name__ == '__main__':
     main()

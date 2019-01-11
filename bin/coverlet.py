@@ -2,6 +2,7 @@
 import os
 import argparse
 import config
+import logger
 
 def validate_args(args):
     if not args.testfolder:
@@ -25,7 +26,7 @@ def parse_arguments(raw_args):
         )
     parser.add_argument('--test', dest='test', action='store_true')
     parser.add_argument('--no-test', dest='test', action='store_false')
-    parser.set_defaults(test='True')
+    parser.set_defaults(test=True)
     return parser.parse_args(raw_args)
 
 def coverlet(args):
@@ -48,11 +49,14 @@ def coverlet(args):
     return cmd
 
 def main(raw_args=None):
+    log = logger.Logger(name='coverlet', format='level')
+    log.infoTitle()
     args = parse_arguments(raw_args)
     validate_args(args)
     cmd = coverlet(args)
     args.test and os.system("dotnet test")
     os.system(cmd)
+    log.infoEndTitle()
 
 if __name__ == '__main__':
     main()

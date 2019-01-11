@@ -7,7 +7,7 @@ import config
 lcovOutput='lcov.info'
 lcovFormat='lcov'
 
-def main():
+def main(args=None):
     coverlet.main([
         '--testfolder', config.primeFolder,
         '--format', lcovFormat,

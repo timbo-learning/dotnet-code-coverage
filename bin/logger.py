@@ -61,8 +61,15 @@ class Logger:
     def critical(self, message):
         self.logger.critical(message)
 
-    def infoTitle(self, message, breakLine=True):
+    def infoEndTitle(self, message=None, breakLine=True):
+        if (message is None):
+            message = 'End of ' + self.name
+        self.infoTitle(message, breakLine)
 
+    def infoTitle(self, message=None, breakLine=True):
+
+        if (message is None):
+            message = self.name
         if breakLine:
             formatStr = "\n" + self.titleFormat + "\n"
         else:

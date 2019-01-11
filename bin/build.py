@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import os
+import sys
 import shutil
 import argparse
+import test_and_report
 
 def parse_arguments(raw_args):
     parser = argparse.ArgumentParser()
@@ -18,7 +20,7 @@ def parse_arguments(raw_args):
         dest='test', action='store_true')
     parser.add_argument('--no-test',
         dest='test', action='store_false')
-    parser.set_defaults(test='False')
+    parser.set_defaults(test=False)
     return parser.parse_args(raw_args)
 
 def sonar_args(args):
@@ -54,7 +56,9 @@ def build(args):
 
     os.system("dotnet build")
     if (not args.test):
-        os.system("python " + os.path.join("bin","test_and_report.py"))
+        sys.argv = [sys.argv[0]]
+        test_and_report.main()
+        #os.system("python " + os.path.join("bin","test_and_report.py"))
     os.system(sonarscanner +  "end")
 
 def main(raw_args=None):
