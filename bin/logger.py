@@ -13,13 +13,15 @@ class Logger:
         if format is "level":
             self.format = '%(levelname)s: %(message)s'
 
-        self.delimiter = "=" * 10
-        self.titleFormat = self.delimiter + " %(message)s " + self.delimiter
+        self.setTitle()
 
-        if not filename:
-            self.handler = self.StreamHandler(stream)
+        if not self.logger.hasHandlers():
+            if not filename:
+                self.handler = self.StreamHandler(stream)
+            else:
+                self.handler = self.FileHandler(filename)
         else:
-            self.handler = self.FileHandler(filename)
+            self.handler = self.logger.handlers[0]
 
     def FileHandler(self, filename, format=None
             #, mode, delay):
@@ -61,20 +63,34 @@ class Logger:
     def critical(self, message):
         self.logger.critical(message)
 
-    def infoEndTitle(self, message=None, breakLine=True):
-        if (message is None):
-            message = 'End of ' + self.name
-        self.infoTitle(message, breakLine)
+    def setTitle(self, delimiter=None, title=" %(message)s "):
+        if (delimiter is None):
+            delimiter = "="
 
-    def infoTitle(self, message=None, breakLine=True):
+        self.line = delimiter * 10
+        self.titleFormat = self.line + title + self.line
+
+    def infoEndTitle(self, message=None, breakLine=True, delimiter=None):
+        if (delimiter is None):
+            delimiter='-'
+
+        self.infoTitle(message=message, breakLine=breakLine, delimiter=delimiter)
+
+    def infoTitle(self, message=None, breakLine=True, delimiter=None):
+        if (delimiter is None):
+            delimiter='='
 
         if (message is None):
-            message = self.name
+            self.setTitle(delimiter=delimiter, title=" %(name)s ")
+
         if breakLine:
             formatStr = "\n" + self.titleFormat + "\n"
         else:
             formatStr = self.titleFormat
-        
+
         self.handler.setFormatter(logging.Formatter(formatStr))
-        self.logger.info(message)
+        self.info(message)
+
+        # Reset configs
         self.handler.setFormatter(logging.Formatter(self.format))
+        #self.setTitle()
