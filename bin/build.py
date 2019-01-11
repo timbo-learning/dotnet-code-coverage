@@ -8,8 +8,34 @@ def parse_arguments(raw_args):
     parser.add_argument('-k', '--key',
         required=True,
         )
+    parser.add_argument('-s','--sonar-xml'
+        #default="SonarQube.Analysis.xml"
+        )
+    parser.add_argument('-cwd', '--use-cwd-for-xml',
+        default=True
+        )
+    parser.add_argument('--test',
+        dest='test', action='store_true')
+    parser.add_argument('--no-test',
+        dest='test', action='store_false')
+    parser.set_defaults(test='False')
     return parser.parse_args(raw_args)
 
+def sonar_args(args):
+
+    key=""
+    if (args.key):
+        key=' /k:"' + args.key + '"'
+
+    # /s: not working properly
+    xml=""
+    if (args.sonar_xml):
+        cwd=""
+        if (args.use_cwd_for_xml):
+            cwd=os.getcwd() + '/'
+        xml=' /s:"' + cwd + args.sonar_xml + '"'
+
+    return key + xml
 
 def build(args):
     sonarqubeXml="SonarQube.Analysis.xml"
@@ -23,16 +49,12 @@ def build(args):
     shutil.copy2(sonarqubeXml, defaultSonarqubeXml)
     shutil.copy2(sonarqubeXml, "bin")
 
-
-    key=""
-    if (args.key):
-        key=' /k:"' + args.key + '"'
-
     os.system(
-            sonarscanner + ' begin ' + key)
+            sonarscanner + ' begin ' + sonar_args(args))
 
     os.system("dotnet build")
-    os.system("python " + os.path.join("bin","test_and_report.py"))
+    if (not args.test):
+        os.system("python " + os.path.join("bin","test_and_report.py"))
     os.system(sonarscanner +  "end")
 
 def main(raw_args=None):
