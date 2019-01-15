@@ -1,7 +1,7 @@
 pipeline {
     environment {
-      PATH = "$PATH:bin"
-      scannerHome = tool 'SonarQube Scanner 2.8'
+      //PATH = "$PATH:bin"
+      scannerHome = tool 'sonarscanner'
     }
     agent any
 
