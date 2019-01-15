@@ -1,7 +1,7 @@
 pipeline {
     environment {
       PATH = "$PATH:bin"
-      scannerHome = tool 'Scanner for MSBuild 2.2'
+      scannerHome = tool 'dotnet-sonarscanner'
     }
     agent any
 
