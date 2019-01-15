@@ -1,6 +1,6 @@
 pipeline {
     environment {
-      scannerHome = tool 'sonarscanms'
+      scannerHome = tool 'Scanner for MSBuild 2.2'
     }
     agent any
 
