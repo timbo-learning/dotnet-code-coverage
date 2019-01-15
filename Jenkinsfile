@@ -10,7 +10,7 @@ pipeline {
             steps {
               withSonarQubeEnv('Sonar') {
                 // SonarScanner.MSBuild.dll is being called by this python script
-                sh 'python3 bin/build.py -k dotnet-local'
+                sh 'python3 bin/build.py -k dotnet-local --sonar-scanner ${scannerHome}/SonarScanner.MSBuild.dll'
               }
             }
         }
