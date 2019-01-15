@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'python bin/build.py -k dotnet-local'
+                sh 'python3 bin/build.py -k dotnet-local'
             }
         }
     }
