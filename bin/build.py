@@ -16,6 +16,8 @@ def parse_arguments(raw_args):
     parser.add_argument('-cwd', '--use-cwd-for-xml',
         default=True
         )
+    parser.add_argument('-ss','--sonar-scanner'
+        )
     parser.add_argument('--test',
         dest='test', action='store_true')
     parser.add_argument('--no-test',
@@ -39,20 +41,29 @@ def sonar_args(args):
 
     return key + xml
 
+def sonar_cmd(args):
+    
+    sonarscanner=os.path.join("bin", "dotnet-sonarscanner")  + ' '
+
+    if (args.sonar_scanner):
+        sonarscanner=args.sonar_scanner
+
+    return sonarscanner
+
 def build(args):
     sonarqubeXml="SonarQube.Analysis.xml"
     defaultSonarqubeXml=os.path.join("bin",".store","dotnet-sonarscanner","4.5.0","dotnet-sonarscanner", "4.5.0", "tools", "netcoreapp2.1", "any",
             sonarqubeXml)
 
-    sonarscanner=os.path.join("bin", "dotnet-sonarscanner")  + ' '
     os.system("dotnet restore")
     os.system("dotnet tool install dotnet-sonarscanner --tool-path=bin")
     os.system("dotnet tool install coverlet.console --tool-path=bin")
     shutil.copy2(sonarqubeXml, defaultSonarqubeXml)
     shutil.copy2(sonarqubeXml, "bin")
 
+    sonar_cmd(args)
     os.system(
-            sonarscanner + ' begin ' + sonar_args(args))
+            sonar_cmd(args) + ' begin ' + sonar_args(args))
 
     os.system("dotnet build")
     if (not args.test):
