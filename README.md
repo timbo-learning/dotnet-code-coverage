@@ -73,7 +73,9 @@ Coverage Chart
 
 #### Jenkins
 
-Installed Jenkins locally.
+1. Installed Jenkins locally.
+2. Installed github, "SonarQube Scanner for Jenkins" plugin on Jenkins
+3. [Analyzing with SonarQube Scanner for Jenkins](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Jenkins)
 
 #### Grafana
 
