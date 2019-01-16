@@ -16,7 +16,8 @@ def parse_arguments(raw_args):
     parser.add_argument('-cwd', '--use-cwd-for-xml',
         default=True
         )
-    parser.add_argument('-ss','--sonar-scanner'
+    parser.add_argument('-ss','--sonar-scanner',
+        default=os.path.join("bin", "dotnet-sonarscanner")
         )
     parser.add_argument('--test',
         dest='test', action='store_true')
@@ -42,13 +43,8 @@ def sonar_args(args):
     return key + xml
 
 def sonar_cmd(args):
-    
-    sonarscanner=os.path.join("bin", "dotnet-sonarscanner")
 
-    if (args.sonar_scanner):
-        sonarscanner=args.sonar_scanner
-
-    return '"' + sonarscanner + '"'
+    return '"' + args.sonar_scanner + '"'
 
 def build(args):
     sonarqubeXml="SonarQube.Analysis.xml"
