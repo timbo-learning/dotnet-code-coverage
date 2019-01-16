@@ -10,6 +10,7 @@ pipeline {
             steps {
               //sonarscanner = '${scannerHome}/SonarScanner.MSBuild'
               //echo '${sonarscanner}'
+              // This has to match the name you gave the sonarqube server on jenkins configuration
               withSonarQubeEnv('sonarqube-jenkins-local') {
                 // SonarScanner.MSBuild.dll is being called by this python script
                 sh 'python3 bin/build.py -k dotnet-local --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
