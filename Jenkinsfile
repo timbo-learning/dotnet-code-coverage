@@ -14,7 +14,7 @@ pipeline {
                 // SonarScanner.MSBuild.dll is being called by this python script
                 sh 'python3 bin/build.py -k dotnet-local --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
                                          -d sonar.cs.opencover.reportsPaths=calculation.opencover.xml,prime.opencover.xml \
-                                         -d sonar.dotnet.visualstudio.solution.file=unit-testing-using-dotnet-test.sln'
+                                            sonar.dotnet.visualstudio.solution.file=unit-testing-using-dotnet-test.sln'
 
               }
             }
