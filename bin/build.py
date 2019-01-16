@@ -64,7 +64,7 @@ def build(args):
     shutil.copy2(sonarqubeXml, "bin")
 
     sonarscanner = sonar_cmd(args)
-    sonar_full_cmd = sonarscanner + ' begin ' + sonar_args(args))
+    sonar_full_cmd = sonarscanner + ' begin ' + sonar_args(args)
     print('+ ' + sonar_full_cmd)
     os.system( sonar_full_cmd )
 
