@@ -19,6 +19,7 @@ def parse_arguments(raw_args):
     parser.add_argument('-ss','--sonar-scanner',
         default=os.path.join("bin", "dotnet-sonarscanner")
         )
+    parser.add_argument('-v', '--version')
     parser.add_argument('-d', '--define',
         nargs='*')
     parser.add_argument('--test',
