@@ -19,6 +19,8 @@ def parse_arguments(raw_args):
     parser.add_argument('-ss','--sonar-scanner',
         default=os.path.join("bin", "dotnet-sonarscanner")
         )
+    parser.add_argument('-d', '--define',
+        nargs='*')
     parser.add_argument('--test',
         dest='test', action='store_true')
     parser.add_argument('--no-test',
@@ -40,7 +42,11 @@ def sonar_args(args):
             cwd=os.getcwd() + '/'
         xml=' /s:"' + cwd + args.sonar_xml + '"'
 
-    return key + xml
+    defined_variables=""
+    for parameter in args.define:
+        defined_variables+=' /d:' + parameter
+
+    return key + xml + defined_variables
 
 def sonar_cmd(args):
 
