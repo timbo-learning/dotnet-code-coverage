@@ -43,12 +43,12 @@ def sonar_args(args):
 
 def sonar_cmd(args):
     
-    sonarscanner=os.path.join("bin", "dotnet-sonarscanner")  + ' '
+    sonarscanner=os.path.join("bin", "dotnet-sonarscanner")
 
     if (args.sonar_scanner):
         sonarscanner=args.sonar_scanner
 
-    return sonarscanner
+    return '"' + sonarscanner + '"'
 
 def build(args):
     sonarqubeXml="SonarQube.Analysis.xml"
@@ -61,16 +61,16 @@ def build(args):
     shutil.copy2(sonarqubeXml, defaultSonarqubeXml)
     shutil.copy2(sonarqubeXml, "bin")
 
-    sonar_cmd(args)
+    sonarscanner = sonar_cmd(args)
     os.system(
-            sonar_cmd(args) + ' begin ' + sonar_args(args))
+            sonarscanner + ' begin ' + sonar_args(args))
 
     os.system("dotnet build")
     if (not args.test):
         sys.argv = [sys.argv[0]]
         test_and_report.main()
         #os.system("python " + os.path.join("bin","test_and_report.py"))
-    os.system(sonarscanner +  "end")
+    os.system(sonarscanner +  ' end')
 
 def main(raw_args=None):
     args = parse_arguments(raw_args)
