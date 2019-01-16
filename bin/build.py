@@ -6,6 +6,33 @@ import argparse
 import config
 import coverlet
 import report_generator
+import json
+
+def get_version(version=None, increment=True):
+    with open("config.json","r+") as fp:
+        config_json = json.load(fp)
+        if not version:
+            version = config_json['version']
+        else:
+            increment=False
+        major, minor, patch = version.split('.')
+        if (increment):
+            patch = int(patch)
+            patch += 1
+            patch = str(patch)
+        version = "%(major)s.%(minor)s.%(patch)s" % {
+            'major': major,
+            'minor': minor,
+            'patch': patch
+        }
+        #print("version is: ", version)
+        config_json['version'] = version
+
+        fp.seek(0)
+        json.dump(config_json, fp)
+
+        return version
+        
 
 def parse_arguments(raw_args):
     parser = argparse.ArgumentParser()
@@ -22,9 +49,13 @@ def parse_arguments(raw_args):
         default=os.path.join("bin", "dotnet-sonarscanner")
         )
     parser.add_argument('-v', '--version')
+    parser.add_argument('--increment-version',
+        dest='increment_version', action='store_true')
+    parser.add_argument('--no-increment-version',
+        dest='increment_version', action='store_true')
+    parser.set_defaults(increment_version=True)
     parser.add_argument('-d', '--define',
         action='append')
-    #parser.add_argument('args', nargs=argparse.REMAINDER)
     parser.add_argument('--test',
         dest='test', action='store_true')
     parser.add_argument('--no-test',
@@ -47,10 +78,14 @@ def sonar_args(args):
         xml=' /s:"' + cwd + args.sonar_xml + '"'
 
     defined_variables=""
-    
-    if (args.define):
-        defined_variables=[' /d:' + parameter for parameter in args.define]
 
+    if not args.define:
+        args.define=[]
+    args.define.append( 'sonar.projectVersion=' + get_version(args.version, args.increment_version) )
+    
+    defined_variables=[' /d:' + parameter for parameter in args.define]
+    defined_variables=" ".join(defined_variables)
+    #print(args.define, defined_variables)
     return key + xml + defined_variables
 
 def sonar_cmd(args):
