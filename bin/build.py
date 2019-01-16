@@ -81,12 +81,12 @@ def sonar_args(args):
 
     if not args.define:
         args.define=[]
-    args.define.append( 'sonar.projectVersion=' + get_version(args.version, args.increment_version) )
+    #args.define.append( 'sonar.projectVersion=' + get_version(args.version, args.increment_version) )
     
     defined_variables=[' /d:' + parameter for parameter in args.define]
     defined_variables=" ".join(defined_variables)
     #print(args.define, defined_variables)
-    return key + xml + defined_variables
+    return key + xml + " /v:" + get_version(args.version, args.increment_version) + defined_variables
 
 def sonar_cmd(args):
 
