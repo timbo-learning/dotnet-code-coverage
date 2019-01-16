@@ -8,6 +8,40 @@ import coverlet
 import report_generator
 import json
 
+def parse_arguments(raw_args):
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-k', '--key',
+        required=True,
+        )
+    parser.add_argument('-s','--sonar-xml'
+        #default="SonarQube.Analysis.xml"
+        )
+    parser.add_argument('-cwd', '--use-cwd-for-xml',
+        default=True
+        )
+    parser.add_argument('-ss','--sonar-scanner',
+        default=os.path.join("bin", "dotnet-sonarscanner")
+        )
+    parser.add_argument('-v', '--version')
+    parser.add_argument('--increment-version',
+        dest='increment_version', action='store_true')
+    parser.add_argument('--no-increment-version',
+        dest='increment_version', action='store_true')
+    parser.set_defaults(increment_version=True)
+    parser.add_argument('-d', '--define',
+        action='append')
+    parser.add_argument('-rg', '--report-generator',
+        dest="report_generator", action='store_true')
+    parser.add_argument('-no-rg', '--no-report-generator',
+        dest="report_generator", action='store_false')
+    parser.set_defaults(report_generator=False)
+    parser.add_argument('--test',
+        dest='test', action='store_true')
+    parser.add_argument('--no-test',
+        dest='test', action='store_false')
+    parser.set_defaults(test=True)
+    return parser.parse_known_args(raw_args)
+
 def get_version(version=None, increment=True):
     with open("config.json","r+") as fp:
         config_json = json.load(fp)
@@ -32,36 +66,6 @@ def get_version(version=None, increment=True):
         json.dump(config_json, fp)
 
         return version
-        
-
-def parse_arguments(raw_args):
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-k', '--key',
-        required=True,
-        )
-    parser.add_argument('-s','--sonar-xml'
-        #default="SonarQube.Analysis.xml"
-        )
-    parser.add_argument('-cwd', '--use-cwd-for-xml',
-        default=True
-        )
-    parser.add_argument('-ss','--sonar-scanner',
-        default=os.path.join("bin", "dotnet-sonarscanner")
-        )
-    parser.add_argument('-v', '--version')
-    parser.add_argument('--increment-version',
-        dest='increment_version', action='store_true')
-    parser.add_argument('--no-increment-version',
-        dest='increment_version', action='store_true')
-    parser.set_defaults(increment_version=True)
-    parser.add_argument('-d', '--define',
-        action='append')
-    parser.add_argument('--test',
-        dest='test', action='store_true')
-    parser.add_argument('--no-test',
-        dest='test', action='store_false')
-    parser.set_defaults(test=True)
-    return parser.parse_known_args(raw_args)
 
 def sonar_args(args):
 
@@ -110,7 +114,7 @@ def coverlet_call(target, folder, output, child_args):
     #Update lcov.info to see line coverage on VS Code
     os.rename(coverlet.DEFAULT_LCOV_OUTPUT, os.path.join(folder, 'lcov.info'))
 
-def test(child_args):
+def test(args, child_args):
     os.system("dotnet test")
 
     coverlet_call(target=config.primeTarget, folder=config.primeFolder, output=config.primeOutput, child_args=child_args)
@@ -118,7 +122,10 @@ def test(child_args):
 
     #lcov.main()
     #Generate the report using Report Generator
-    report_generator.main([])
+    if args.report_generator:
+        report_generator.main([])
+    else:
+        print("report_generator=False. Skipping...")
 
 def build(args, child_args):
     sonarqubeXml="SonarQube.Analysis.xml"
@@ -138,7 +145,7 @@ def build(args, child_args):
 
     os.system("dotnet build")
     if (args.test):
-        test(child_args)
+        test(args, child_args)
         #sys.argv = [sys.argv[0]]
         #test_and_report.main()
         #os.system("python " + os.path.join("bin","test_and_report.py"))
