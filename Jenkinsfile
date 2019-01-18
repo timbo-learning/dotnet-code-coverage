@@ -6,6 +6,7 @@ pipeline {
     }
     agent any
 
+    stages { stage('SonarQube') {
     stages {
       withSonarQubeEnv('sonarqube-jenkins-local') {
           stage('Build') {
@@ -46,5 +47,6 @@ pipeline {
             }
           }
       }
+   } }
    }
 }
