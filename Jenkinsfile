@@ -38,9 +38,8 @@ pipeline {
         }
         stage('SonarQube Quality Gate') {
           steps {
-            node('Sonarqube') {
-              sh 'python3 bin/build.py --sonar-end'
-            }
+            label 'Sonarqube'
+            sh 'python3 bin/build.py --sonar-end'
             //sh 'sleep 5s'
             // Just in case something goes wrong, pipeline will be killed after a timeout
             timeout(time: 2, unit: 'MINUTES') {
