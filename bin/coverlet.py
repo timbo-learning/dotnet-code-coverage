@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 import os
+import sys
 import argparse
 import config
 import logger
+import subprocess
+import shlex
 
 DEFAULT_OPENCOVER_OUTPUT='coverage.opencover.xml'
 DEFAULT_LCOV_OUTPUT     ='coverage.info'
@@ -48,6 +51,11 @@ def coverlet(args):
     }
     return cmd
 
+def call(cmd):
+    print("+ " + cmd + " ")
+    # shlex.split does not split quoted substrings
+    return subprocess.call(shlex.split(cmd))
+
 def main(raw_args=None):
     log = logger.Logger(name='coverlet', format='level')
     log.infoTitle()
@@ -57,9 +65,9 @@ def main(raw_args=None):
     print("child_args:",child_args)
     cmd += " " + " ".join(child_args)
     args.test and os.system("dotnet test")
-    print(">>>>" + cmd + " ")
-    os.system(cmd)
+    return_code = call(cmd)
     log.infoEndTitle()
+    return return_code
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
