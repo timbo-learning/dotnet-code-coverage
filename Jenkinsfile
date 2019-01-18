@@ -23,7 +23,6 @@ pipeline {
                   }
                 }
             }
-              stages {
               stage('Dotnet Test') {
                 steps {
                   sh 'python3 bin/build.py --test'
@@ -50,8 +49,7 @@ pipeline {
                   }
                 }
               }
-              }
-        }
+          }
         }
     }
 }
