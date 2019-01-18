@@ -11,9 +11,7 @@ pipeline {
         steps {
           //echo '${sonarscanner}'
           // This has to match the name you gave the sonarqube server on jenkins configuration
-
           withSonarQubeEnv('sonarqube-jenkins-local') {
-            label 'sonarqube-label'
             // SonarScanner.MSBuild.dll is being called by this python script
             sh 'python3 bin/build.py -k dotnet-local --sonar-begin --build --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
                                      -d sonar.cs.opencover.reportsPaths=calculation.opencover.xml,prime.opencover.xml \
@@ -38,7 +36,6 @@ pipeline {
       }
       stage('SonarQube Quality Gate') {
         steps {
-          label 'sonarqube-label'
           sh 'python3 bin/build.py --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" --sonar-end'
           //sh 'sleep 5s'
           // Just in case something goes wrong, pipeline will be killed after a timeout
