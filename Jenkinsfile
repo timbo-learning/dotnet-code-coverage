@@ -7,11 +7,12 @@ pipeline {
     agent any
 
     stages {
+      node('SonarQube') {
+      withSonarQubeEnv('sonarqube-jenkins-local') {
         stage('Build') {
             steps {
               //echo '${sonarscanner}'
               // This has to match the name you gave the sonarqube server on jenkins configuration
-              withSonarQubeEnv('sonarqube-jenkins-local') {
                 // SonarScanner.MSBuild.dll is being called by this python script
                 sh 'python3 bin/build.py -k dotnet-local --sonar-begin --build --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
                                          -d sonar.cs.opencover.reportsPaths=calculation.opencover.xml,prime.opencover.xml \
@@ -57,7 +58,6 @@ pipeline {
               }
             }
           }
-        }
         stage('Dotnet Test') {
           steps {
             sh 'python3 bin/build.py --test'
@@ -83,5 +83,7 @@ pipeline {
             }
           }
         }
+      }
+      }
     }
 }
