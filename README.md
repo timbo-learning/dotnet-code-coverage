@@ -74,8 +74,10 @@ Coverage Chart
 #### Jenkins
 
 1. Installed Jenkins locally.
-2. Installed github, "SonarQube Scanner for Jenkins" plugin on Jenkins
+2. Installed github, "SonarQube Scanner for Jenkins" and "Sonar Quality Gates Plugin" plugins on Jenkins
 3. [Analyzing with SonarQube Scanner for Jenkins](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Jenkins)
+4. Configuration on `Manage System`
+![Jenkins Pipeline](screenshots/jenkins/jenkins-pipeline.PNG)
 
 #### Grafana
 
