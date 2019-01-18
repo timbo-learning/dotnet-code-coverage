@@ -5,12 +5,12 @@ pipeline {
       //sonarscanner = '${scannerHome}/SonarScanner.MSBuild'
     }
     agent {
-      label 'sonarqube-agent'
+      label 'master'
     }
 
     stages {
         stage('Build') {
-          agent 'sonarqube-agent'
+          agent 'master'
           steps {
             //echo '${sonarscanner}'
             // This has to match the name you gave the sonarqube server on jenkins configuration
@@ -39,7 +39,7 @@ pipeline {
           }
         }
         stage('SonarQube Quality Gate') {
-          agent 'sonarqube-agent'
+          agent 'master'
           steps {
             sh 'python3 bin/build.py --sonar-end'
             //sh 'sleep 5s'
