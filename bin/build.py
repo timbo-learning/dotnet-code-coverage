@@ -51,7 +51,7 @@ def parse_arguments(raw_args):
         default=False)
     parser.add_argument('--all',
         action='store_true',
-        default=False)
+        default=True)
 
     parser.add_argument('-e', '--exit-on-error',
         action='store_true',
@@ -181,6 +181,10 @@ def build(args, child_args):
 
 def main(raw_args=None):
     args, child_args = parse_arguments(raw_args)
+    
+    # Revert args.all True default to False if any other option has been given
+    if args.sonar_begin or args.build or args.test or args.coverlet or args.report_generator or args.sonar_end:
+        args.all = False
 
     if args.sonar_begin or args.all:
         sonar_begin(args, child_args)
