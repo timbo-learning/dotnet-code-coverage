@@ -8,6 +8,7 @@ pipeline {
 
     stages {
       stage('SonarQube Stage') {
+      steps {
       node {
       withSonarQubeEnv('sonarqube-jenkins-local') {
         stage('Build') {
@@ -84,6 +85,7 @@ pipeline {
             }
           }
         }
+      }
       }
       }
       }
