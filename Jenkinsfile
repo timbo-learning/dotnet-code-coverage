@@ -22,8 +22,9 @@ pipeline {
         }
         stage('Quality Gate') {
           steps {
+            sh 'sleep 5s'
             // Just in case something goes wrong, pipeline will be killed after a timeout
-            timeout(time: 5, unit: 'MINUTES') {
+            timeout(time: 2, unit: 'MINUTES') {
               waitForQualityGate abortPipeline: true
             }
           }
