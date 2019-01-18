@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Coverlet') {
           steps {
-            sh 'python3 bin/build.py --coverlet --threshold 80'
+            sh 'python3 bin/build.py --coverlet --threshold 70'
           }
         }
         stage('Report Generator') {
