@@ -24,7 +24,7 @@ pipeline {
           sh 'python3 bin/build.py --test'
         }
       }
-      stage('Coverlet') {
+      stage('Coverlet Code Coverage') {
         steps {
           sh 'python3 bin/build.py --coverlet'
         }
