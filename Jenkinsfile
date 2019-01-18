@@ -8,6 +8,7 @@ pipeline {
 
     stages {
         stage('Build') {
+          stages {
           steps {
             //echo '${sonarscanner}'
             // This has to match the name you gave the sonarqube server on jenkins configuration
@@ -48,6 +49,7 @@ pipeline {
                 }
               }
               }
+        }
         }
     }
 }
