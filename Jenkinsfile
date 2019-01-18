@@ -11,15 +11,13 @@ pipeline {
             steps {
               //echo '${sonarscanner}'
               // This has to match the name you gave the sonarqube server on jenkins configuration
+              label 'Sonarqube'
 
-              node {
-                label 'SonarQube'
-                withSonarQubeEnv('sonarqube-jenkins-local') {
-                  // SonarScanner.MSBuild.dll is being called by this python script
-                  sh 'python3 bin/build.py -k dotnet-local --sonar-begin --build --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
-                                           -d sonar.cs.opencover.reportsPaths=calculation.opencover.xml,prime.opencover.xml \
-                                           -d sonar.dotnet.visualstudio.solution.file=unit-testing-using-dotnet-test.sln'
-                }
+              withSonarQubeEnv('sonarqube-jenkins-local') {
+                // SonarScanner.MSBuild.dll is being called by this python script
+                sh 'python3 bin/build.py -k dotnet-local --sonar-begin --build --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
+                                         -d sonar.cs.opencover.reportsPaths=calculation.opencover.xml,prime.opencover.xml \
+                                         -d sonar.dotnet.visualstudio.solution.file=unit-testing-using-dotnet-test.sln'
               }
             }
         }
@@ -40,7 +38,7 @@ pipeline {
         }
         stage('SonarQube Quality Gate') {
           steps {
-            node('SonarQube') {
+            node('Sonarqube') {
               sh 'python3 bin/build.py --sonar-end'
             }
             //sh 'sleep 5s'
