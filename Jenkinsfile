@@ -6,8 +6,8 @@ pipeline {
     }
     agent any
 
-    withSonarQubeEnv('sonarqube-jenkins-local') {
-      stages {
+    stages {
+      withSonarQubeEnv('sonarqube-jenkins-local') {
           stage('Build') {
               steps {
                 //echo '${sonarscanner}'
