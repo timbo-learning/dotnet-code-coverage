@@ -4,9 +4,7 @@ pipeline {
       scannerHome = tool 'sonarscanner4.5'
       //sonarscanner = '${scannerHome}/SonarScanner.MSBuild'
     }
-    agent {
-      label 'sonarqube-agent'
-    }
+    agent any
 
     stages {
         stage('Build') {
