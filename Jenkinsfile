@@ -18,6 +18,9 @@ pipeline {
               sh 'python3 bin/build.py -k dotnet-local --sonar-begin --build --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
                                        -d sonar.cs.opencover.reportsPaths=calculation.opencover.xml,prime.opencover.xml \
                                        -d sonar.dotnet.visualstudio.solution.file=unit-testing-using-dotnet-test.sln'
+            }
+          }
+              stages {
               stage('Dotnet Test') {
                 steps {
                   sh 'python3 bin/build.py --test'
@@ -44,8 +47,7 @@ pipeline {
                   }
                 }
               }
-            }
-          }
+              }
         }
     }
 }
