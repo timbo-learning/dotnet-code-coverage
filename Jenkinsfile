@@ -13,7 +13,7 @@ pipeline {
           // This has to match the name you gave the sonarqube server on jenkins configuration
           withSonarQubeEnv('sonarqube-jenkins-local') {
             // SonarScanner.MSBuild.dll is being called by this python script
-            sh 'python3 bin/build.py -k dotnet-local --sonar-begin --build --test --coverlet --sonar-end --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
+            sh 'python3 bin/build.py -k jenkins-dotnet --sonar-begin --build --test --coverlet --sonar-end --sonar-scanner "${scannerHome}/SonarScanner.MSBuild" \
                                      -d sonar.cs.opencover.reportsPaths=calculation.opencover.xml,prime.opencover.xml \
                                      -d sonar.dotnet.visualstudio.solution.file=unit-testing-using-dotnet-test.sln'
           }
@@ -26,7 +26,7 @@ pipeline {
       }
       stage('Coverlet') {
         steps {
-          sh 'python3 bin/build.py --coverlet --threshhold 80' || error=true
+          sh 'python3 bin/build.py --coverlet --threshhold 80'
         }
       }
       stage('Report Generator') {
