@@ -79,6 +79,22 @@ Coverage Chart
 4. Configuration on `Manage System`
 ![Jenkins Pipeline](screenshots/jenkins/jenkins-pipeline.PNG)
 
+###### Bitbucket+Jenkins integration
+
+1. Install `Bitbucket Plugin` [on Jenkins](https://wiki.jenkins.io/display/JENKINS/Bitbucket+Plugin)
+2. `ngrok.exe http <JENKINS_PORT>`
+   a. get the exposed URL on [ngrok.com](https://ngrok.com)
+3. Create webhook user on Jenkins with Permissions:
+   a. Overall Read
+   2. Job Build
+   3.  Job Configure
+   4.  Job Create
+   5.  Job Read
+4. Disable `Prevent Cross Site Request Forgery exploits`
+   a.  so that we dont get the error `no valid crumb was included in the request`
+2.   Tick _Build Trigger_ `Build when a change is pushed to BitBucket` on project configuration
+6. (TODO) Build based on `Jenkinsfile` Pipeline
+
 #### Grafana
 
 Grafana seems to be more for DevOps Runtime metrics rather than development testing for code coverage.
